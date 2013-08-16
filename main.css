@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #070504;
+}
+
+.profile-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 0;
+}
+
+.background-container {
+    z-index: 0;
+    width: 1196px;
+    height: 100%;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    float: none!important;
+}
+
+.background {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin-left: 0;
+    top: 0;
+}
+
+.background-image {
+    width: auto;
+    height: 100%;
+}
+
+@media (max-width:990px) {
+    .background-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.profile {
+    margin-left: -588px;
+    margin-top: 0;
+    padding-top: 20px;
+    left: 50%;
+    right: auto;
+    top: 20px;
+    position: absolute;
+    opacity: 1;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 1px solid transparent;
+    z-index: 3;
+    overflow: visible;
+}
+
+.profile-head {
+    float: left;
+    padding: 0 20px 0 20px;
+    width: auto;
+    min-width: 240px;
+    max-width: 840px;
+}
+
+.name {
+    font-family: futura-pt-1,futura-pt-2, "proxima-nova-1", "proxima-nova-2", Tahoma, Helvetica, Verdana, sans-serif;
+    font-size: 73px;
+    color: #f0ebeb;
+    line-height: 1.1;
+    margin: 0 0 .15em 0;
+}
+
+.headline {
+    font-family: futura-pt-1,futura-pt-2, "proxima-nova-1", "proxima-nova-2", Tahoma, Helvetica, Verdana, sans-serif;
+    font-size: 23px;
+    color: #e9be48;
+    line-height: 1.2;
+    margin: 0 0 .4em 0;
+}
+
+.profile-content {
+    width: 372px;
+    clear: both;
+}
+
+.bio {
+    font-family: proxima-nova-1,proxima-nova-2, "proxima-nova-1", "proxima-nova-2", Tahoma, Helvetica, Verdana, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 20px 0 20px;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.bio p {
+    margin: 0 0 .75em 0;
+}
+
+.bio a {
+    color: #e9be48;
+    text-decoration: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: ".";
+    font-size: 0;
+}
