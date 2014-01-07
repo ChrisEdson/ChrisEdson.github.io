@@ -68,7 +68,7 @@ $('document').ready(function () {
 
             var mpt = (11.03) + (98.46*(Math.exp(-0.0053*kpw))) + (0.387*secPerKM) + (0.1*(Math.exp(0.23*BF)));
             var hours = Math.floor(mpt / 60);
-            var mins = Math.round(mpt % 60);
+            var mins = Math.floor(mpt % 60);
             var secs = Math.round((mpt * 60) % 60);
 
             console.log(mpw, kmMins, kmSecs, BF);
