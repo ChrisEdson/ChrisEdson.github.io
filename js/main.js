@@ -3,108 +3,114 @@ helper-functions.js */
 
 $('document').ready(function () {
 
-    $('.cancer-selection button').click(function() {
+    $('.unit-selection button').click(function() {
         var type = $(this).attr("data-type");
-        $('.cancer-selection').slideUp(250);
+        $('.unit-selection').slideUp(250);
         $('#reset-buttons').slideDown(200);
         $('footer').addClass('expanded');
         $('.small').addClass('expanded');
 
         // Present the first question
-        var count = 0;
-        $('#' + type + '-questions tr:nth-child(1)').attr('id', 'currow');
-        var q1 = $('#currow td:nth-child(2)').html();
-        var q3 = '<div id="d0" style="display: none;"><p><b>' + q1 + '</b></p>';
-        var a1 = $('#currow td:nth-child(3)').html();
-        var r1 = q3 + a1 + '</div>';
+        $('#' + type + '-questions').slideDown(250);
 
-        $('#showquestion').html(r1);
-        $('#d0').slideDown(250);
         $('html, body').animate({scrollTop: $(document).height()}, 500);
 
-        // When answer clicked
-        $('li').live('click',function () {
-            removeGraph();
+        // When miles submit button clicked
+        $( "#miles" ).submit(function(event) {
+            var mpw = parseFloat($('#mpw').val());
+            var milesMins = parseInt($('#miles-mins').val());
+            var milesSecs = parseFloat($('#miles-secs').val());
+            var BF = parseFloat($('#miles-bf').val());
 
-            // Add selected class to clicked answer and remove it from any siblings
-            $(this).addClass('selected').siblings().removeClass('selected');
+            var kpw = mpw * 1.609344;
+            var secPerKM = (milesMins*60 + milesSecs) / 1.609344;
 
-            // Get answer ID
-            var answerID = $(this).attr('data-question');
+            var mpt = (11.03) + (98.46*(Math.exp(-0.0053*kpw))) + (0.387*secPerKM) + (0.1*(Math.exp(0.23*BF)));
+            var hours = Math.floor(mpt / 60);
+            var mins = Math.round(mpt % 60);
+            var secs = Math.round((mpt * 60) % 60);
 
-            // Get ID of this question
-            var parid = $(this).parent().parent().attr('id');
-            var parnum = parseInt(parid.slice(1, 4), 10);
+            console.log(mpw, milesMins, milesSecs, BF);
+            console.log(kpw, secPerKM, mpt);
+            console.log(hours, mins, secs);
 
-            count = count + 1;
+            // Error Checking
+            var predictedText, predictedResult;
+            if (isNaN(mpw) || isNaN(milesMins) || isNaN(milesSecs) || isNaN(BF)) {
 
-            // For each question shown, if the question number is greater than the ID of current clicked question, remove it
-            $('#showquestion div').each(function () {
-                var divid = $(this).attr('id');
-                var divnum = parseInt(divid.slice(1, 4), 10);
-                if (divnum > parnum) {
-                    $(this).remove();
-                }
-            });
+                predictedText = "You mad man! I don't think you entered numbers above did you? Maybe try again. For me.";
 
-            // If answer is a terminal node (i.e. if the ID has 'T' in it), then output graph
-            if (answerID.indexOf("T") >= 0) {
-                var nodeID = parseInt(answerID.slice(1, 4), 10);
-                graph(type, nodeID, count);
-                return;
+                $('#results-box').slideDown(250);
+                $('#predicted-text').html(predictedText);
+
+            } else {
+
+                predictedText = "<b>Your predicted marathon time is:</b>";
+                predictedResult = "<p>" + hours + " hours " + mins + " minutes " + secs + " seconds</p>";
+
+                $('#results-box').slideDown(250);
+                $('#predicted-text').html(predictedText);
+                $('#predicted-result').html(predictedResult);
             }
 
-            // For each td (that is within the cancer specific table), run through this
-            $('#'+type+'-questions td' ).each(function (){
-                var qnum = $(this).text();
-                // If question number equals the answer ID, then do the following
-                if (qnum == answerID) {
+            event.preventDefault();
+        });
 
-                    // Get question
-                    var q = $(this).next('td').html();
-                    var q2 = '<div id="d' + count + '" style="display: none;"><p><b>' + q + '</b></p>';
-                    // Get list of answers
-                    var a = $(this).next('td').next('td').html();
-                    // Get previous showquestion html
-                    var qs = $('#showquestion').html();
-                    // Concatenate them all
-                    var r = qs + q2 + a +'</div>';
+        // When KM submit button clicked
 
-                    // Set the 'showed question' element to be r. Animate in the new question.
-                    $('#showquestion').html(r);
-                    $('#d' + count).slideDown(250);
+        $( "#km" ).submit(function(event) {
+            var kpw = parseFloat($('#kpw').val());
+            var kmMins = parseInt($('#km-mins').val());
+            var kmSecs = parseFloat($('#km-secs').val());
+            var BF = parseFloat($('#km-bf').val());
 
-                    // Scroll to end of page
-                    $('html, body').animate({scrollTop: $(document).height()}, 500);
-                }
-            });
+            var secPerKM = (kmMins*60 + kmSecs);
 
+            var mpt = (11.03) + (98.46*(Math.exp(-0.0053*kpw))) + (0.387*secPerKM) + (0.1*(Math.exp(0.23*BF)));
+            var hours = Math.floor(mpt / 60);
+            var mins = Math.round(mpt % 60);
+            var secs = Math.round((mpt * 60) % 60);
+
+            console.log(mpw, kmMins, kmSecs, BF);
+            console.log(kpw, secPerKM, mpt);
+            console.log(hours, mins, secs);
+
+            // Error Checking
+            var predictedText, predictedResult;
+            if (isNaN(kpw) || isNaN(kmMins) || isNaN(kmSecs) || isNaN(BF)) {
+
+                predictedText = "You mad man! I don't think you entered numbers above did you? Maybe try again. For me.";
+
+                $('#results-box').slideDown(250);
+                $('#predicted-text').html(predictedText);
+
+            } else {
+
+                predictedText = "<b>Your predicted marathon time is:</b>";
+                predictedResult = "<p>" + hours + " hours " + mins + " minutes " + secs + " seconds</p>";
+
+                $('#results-box').slideDown(250);
+                $('#predicted-text').html(predictedText);
+                $('#predicted-result').html(predictedResult);
+            }
+
+            event.preventDefault();
         });
 
         // Reset buttons
-        $('#reset-cancer').click(function() {
-            $('#showquestion div').slideUp(250, function() {
-                $('#showquestion').empty();
-                $('#currow').removeAttr('id');
-                r1 = "";
-                $('.cancer-selection').slideDown(250);
+        $('#reset-unit').click(function() {
+            $('#showquestion>div').slideUp(250, function() {
+                $('.unit-selection').slideDown(250);
             });
+            $("input[type=text]").val("");
             $('#reset-buttons').slideUp(200);
             $('footer').removeClass('expanded');
             $('.small').removeClass('expanded');
-            removeGraph();
         });
 
         $('#reset-questions').click(function() {
-
-            if ($("#showquestion div").length==1) {
-                return;
-            }
-
-            $('#showquestion').html(r1);
-            $('#d0').slideDown(250);
-            removeGraph();
-            $('html, body').animate({scrollTop: $(document).height()}, 500);
+            $("input[type=text]").val("");
+            $('#results-box').slideUp(250);
         });
 
     });
