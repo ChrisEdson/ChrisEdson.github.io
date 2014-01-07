@@ -1,0 +1,333 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+main {
+    min-height: 100%;
+    overflow: auto;
+    display: block;
+}
+
+header {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    clear: both;
+    height: 33px;
+    margin-top: -33px;
+    background-color: rgb(2,111,82);
+    color: white;
+
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+footer.expanded {
+    height: 55px;
+    margin-top: -55px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    box-sizing: border-box;
+    border: none;
+    background: #017050;
+    color: #ffffff;
+    padding: 9px 12px 10px;
+    margin: 8px;
+    width: 197px;
+    height: 50px;
+    line-height: 22px;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: none;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-backface-visibility: hidden;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00966A;
+}
+
+button:active {
+    background: #017050;
+    color: gray;
+}
+
+.answers {
+    margin:0.5em 0 0.5em 1em;
+    width: 1050px;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answers > div {
+    margin: 8px 100px;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+    background-color: #EEEEEE;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.answers > div:last-child {
+    border: 2px solid #8B8B8B;
+}
+
+ul {
+    list-style-image: url(../img/bullet.gif);
+    vertical-align: top;
+    line-height: 20px;
+}
+
+li {
+    padding: 0.2em;
+}
+
+li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.header-logo {
+    background: url('../img/header-logo.jpg') no-repeat;
+    height: 186px;
+    width: 77px;
+    float: left;
+    margin-left: 23px;
+}
+
+.header-img {
+    background: url('../img/header-main.jpg') no-repeat;
+    background-size: 100%;
+    width: 850px;
+    height: 182px;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-container {
+    margin: 8px auto;
+    width: 1050px;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.intro {
+    margin: 18px 100px 8px 100px;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+    background-color: white;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.cancer-selection {
+    width: 1050px;
+    margin: 8px auto;
+    text-align: center;
+}
+
+div.results {
+    background-color: white;
+}
+
+.complications-wrap, .implications-wrap {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 15px 2px 15px;
+    text-align: left;
+}
+
+.td-text {
+    padding-right: 14px;
+    padding-left: 5px;
+}
+
+.comp-info {
+    font-style: italic;
+    font-size: 12px;
+    margin: 0;
+}
+
+.ie-warning {
+    background-color: rgb(255, 165, 165);
+}
+
+
+.hidden {
+    display: none;
+}
+
+.chart-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.bottom-bar {
+    position: absolute;
+
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    width: 100%;
+}
+
+.bottom-bar a:hover {
+    color: rgb(180, 180, 180);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.small {
+    font-size: 12px;
+    line-height: 10px;
+    color: rgb(180, 180, 180);
+
+    margin-top: 13px;
+
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.small.expanded {
+    margin-top: 35px;
+}
+
+.small a {
+    color: rgb(180, 180, 180);
+}
+
+.small a:hover {
+    color: white;
+}
+
+.red {
+    color: red;
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}
+
+/* SVG Styles */
+
+.tooltip-rect {
+    fill: white;
+    fill-opacity: 0.85;
+    stroke: #8B8B8B;
+    stroke-width: 2px;
+
+    font-size: 11px;
+}
+
+.legend-rect {
+    fill: white;
+    fill-opacity: 0.85;
+    stroke: #8B8B8B;
+    stroke-width: 2px;
+
+    font-size: 11px;
+}
+
+text {
+    font-size: 12px;
+    pointer-events: none;
+}
+
+path {
+    fill: none;
+    stroke: #8B8B8B;
+    stroke-width: 2px;
+    pointer-events: none;
+}
+
+circle {
+    stroke: #8B8B8B;
+    stroke-width: 2px;
+}
+
+.x-axis {
+    fill: none;
+    stroke: #8B8B8B;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.survival-label {
+    fill: none;
+    stroke: #8B8B8B;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+/* Twisty tools */
+
+.twistyOpen, .twistyClosed {
+    border-bottom: 1px solid #d9d9cd;
+    cursor:pointer;cursor:hand;
+    padding: 4px 4px 4px 20px;
+    margin: 2px 270px;
+}
+
+.twistyOpen {
+    background: url('../img/twistyOpen.gif') no-repeat center left;
+}
+
+.twistyClosed {
+    background: url('../img/twistyClosed.gif') no-repeat center left;
+}
