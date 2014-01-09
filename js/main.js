@@ -17,18 +17,25 @@ $('document').ready(function () {
 
         // When miles submit button clicked
         $( "#miles" ).submit(function(event) {
-            var mpw = parseFloat($('#mpw').val());
-            var milesMins = parseInt($('#miles-mins').val());
-            var milesSecs = parseFloat($('#miles-secs').val());
-            var BF = parseFloat($('#miles-bf').val());
+            var mpw, milesMins, milesSecs, BF, kpw, secPerKM, mpt, hours, mins, secs;
 
-            var kpw = mpw * 1.609344;
-            var secPerKM = (milesMins*60 + milesSecs) / 1.609344;
+            mpw = parseFloat($('#mpw').val());
+            milesMins = parseInt($('#miles-mins').val(), 10);
+            if ($('#miles-secs').val() === '') {
+                milesSecs = 0;
+            } else {
+                milesSecs = parseFloat($('#miles-secs').val());
+            }
 
-            var mpt = (11.03) + (98.46*(Math.exp(-0.0053*kpw))) + (0.387*secPerKM) + (0.1*(Math.exp(0.23*BF)));
-            var hours = Math.floor(mpt / 60);
-            var mins = Math.floor(mpt % 60);
-            var secs = Math.round((mpt * 60) % 60);
+            BF = parseFloat($('#miles-bf').val());
+
+            kpw = mpw * 1.609344;
+            secPerKM = (milesMins*60 + milesSecs) / 1.609344;
+
+            mpt = (11.03) + (98.46*(Math.exp(-0.0053*kpw))) + (0.387*secPerKM) + (0.1*(Math.exp(0.23*BF)));
+            hours = Math.floor(mpt / 60);
+            mins = Math.floor(mpt % 60);
+            secs = Math.round((mpt * 60) % 60);
 
             console.log(mpw, milesMins, milesSecs, BF);
             console.log(kpw, secPerKM, mpt);
@@ -38,7 +45,7 @@ $('document').ready(function () {
             var predictedText, predictedResult;
             if (isNaN(mpw) || isNaN(milesMins) || isNaN(milesSecs) || isNaN(BF)) {
 
-                predictedText = "You mad man! I don't think you entered numbers above did you? Maybe try again. For me.";
+                predictedText = "You mad man! I don't think you entered numbers properly above did you? Maybe try again. For me.";
 
                 $('#results-box').slideDown(250);
                 $('#predicted-text').html(predictedText);
@@ -59,17 +66,24 @@ $('document').ready(function () {
         // When KM submit button clicked
 
         $( "#km" ).submit(function(event) {
-            var kpw = parseFloat($('#kpw').val());
-            var kmMins = parseInt($('#km-mins').val());
-            var kmSecs = parseFloat($('#km-secs').val());
-            var BF = parseFloat($('#km-bf').val());
+            var kpw, kmMins, kmSecs, BF, secPerKM, mpt, hours, mins, secs;
 
-            var secPerKM = (kmMins*60 + kmSecs);
+            kpw = parseFloat($('#kpw').val());
+            kmMins = parseInt($('#km-mins').val(), 10);
+            if ($('#km-secs').val() === '') {
+                kmSecs = 0;
+            } else {
+                kmSecs = parseFloat($('#km-secs').val());
+            }
 
-            var mpt = (11.03) + (98.46*(Math.exp(-0.0053*kpw))) + (0.387*secPerKM) + (0.1*(Math.exp(0.23*BF)));
-            var hours = Math.floor(mpt / 60);
-            var mins = Math.floor(mpt % 60);
-            var secs = Math.round((mpt * 60) % 60);
+            BF = parseFloat($('#km-bf').val());
+
+            secPerKM = (kmMins*60 + kmSecs);
+
+            mpt = (11.03) + (98.46*(Math.exp(-0.0053*kpw))) + (0.387*secPerKM) + (0.1*(Math.exp(0.23*BF)));
+            hours = Math.floor(mpt / 60);
+            mins = Math.floor(mpt % 60);
+            secs = Math.round((mpt * 60) % 60);
 
             console.log(mpw, kmMins, kmSecs, BF);
             console.log(kpw, secPerKM, mpt);
@@ -79,20 +93,18 @@ $('document').ready(function () {
             var predictedText, predictedResult;
             if (isNaN(kpw) || isNaN(kmMins) || isNaN(kmSecs) || isNaN(BF)) {
 
-                predictedText = "You mad man! I don't think you entered numbers above did you? Maybe try again. For me.";
-
-                $('#results-box').slideDown(250);
-                $('#predicted-text').html(predictedText);
+                predictedText = "You mad man! I don't think you entered numbers properly above did you? Maybe try again. For me.";
+                predictedResult = "";
 
             } else {
 
                 predictedText = "<b>Your predicted marathon time is:</b>";
                 predictedResult = "<p>" + hours + " hours " + mins + " minutes " + secs + " seconds</p>";
-
-                $('#results-box').slideDown(250);
-                $('#predicted-text').html(predictedText);
-                $('#predicted-result').html(predictedResult);
             }
+
+            $('#results-box').slideDown(250);
+            $('#predicted-text').html(predictedText);
+            $('#predicted-result').html(predictedResult);
 
             event.preventDefault();
         });
