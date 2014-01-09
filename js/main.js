@@ -5,13 +5,13 @@ $('document').ready(function () {
 
     $('.unit-selection button').click(function() {
         var type = $(this).attr("data-type");
-        $('.unit-selection').slideUp(250);
-        $('#reset-buttons').slideDown(200);
+        $('.unit-selection').slideUp(150);
+        $('#reset-buttons').slideDown(100);
         $('footer').addClass('expanded');
         $('.small').addClass('expanded');
 
         // Present the first question
-        $('#' + type + '-questions').slideDown(250);
+        $('#' + type + '-questions').slideDown(150);
 
         $('html, body').animate({scrollTop: $(document).height()}, 500);
 
@@ -37,28 +37,31 @@ $('document').ready(function () {
             mins = Math.floor(mpt % 60);
             secs = Math.round((mpt * 60) % 60);
 
-            console.log(mpw, milesMins, milesSecs, BF);
-            console.log(kpw, secPerKM, mpt);
-            console.log(hours, mins, secs);
-
             // Error Checking
-            var predictedText, predictedResult;
+            var predictedText, predictedResult, rangeError;
             if (isNaN(mpw) || isNaN(milesMins) || isNaN(milesSecs) || isNaN(BF)) {
 
                 predictedText = "You mad man! I don't think you entered numbers properly above did you? Maybe try again. For me.";
-
-                $('#results-box').slideDown(250);
-                $('#predicted-text').html(predictedText);
+                predictedResult = "";
+                rangeError = "";
 
             } else {
 
                 predictedText = "<b>Your predicted marathon time is:</b>";
                 predictedResult = "<p>" + hours + " hours " + mins + " minutes " + secs + " seconds</p>";
 
-                $('#results-box').slideDown(250);
-                $('#predicted-text').html(predictedText);
-                $('#predicted-result').html(predictedResult);
+                if (mpt < 165 || mpt > 266) {
+                    rangeError = "n.b. This is outside the range that this calculator is accurate (2 hours 45 minutes to 4 hours 26 minutes). Maybe try entering in different values above.";
+                } else {
+                    rangeError = "";
+                }
+
             }
+
+            $('#results-box').slideDown(150);
+            $('#predicted-text').html(predictedText);
+            $('#predicted-result').html(predictedResult);
+            $('#range-error').html(rangeError);
 
             event.preventDefault();
         });
@@ -85,44 +88,49 @@ $('document').ready(function () {
             mins = Math.floor(mpt % 60);
             secs = Math.round((mpt * 60) % 60);
 
-            console.log(mpw, kmMins, kmSecs, BF);
-            console.log(kpw, secPerKM, mpt);
-            console.log(hours, mins, secs);
-
             // Error Checking
-            var predictedText, predictedResult;
+            var predictedText, predictedResult, rangeError;
             if (isNaN(kpw) || isNaN(kmMins) || isNaN(kmSecs) || isNaN(BF)) {
 
                 predictedText = "You mad man! I don't think you entered numbers properly above did you? Maybe try again. For me.";
                 predictedResult = "";
+                rangeError = "";
 
             } else {
 
                 predictedText = "<b>Your predicted marathon time is:</b>";
                 predictedResult = "<p>" + hours + " hours " + mins + " minutes " + secs + " seconds</p>";
+
+                if (mpt < 165 || mpt > 266) {
+                    rangeError = "n.b. This is outside the range that this calculator is accurate (2 hours 45 minutes to 4 hours 26 minutes). Maybe try entering in different values above.";
+                } else {
+                    rangeError = "";
+                }
+
             }
 
-            $('#results-box').slideDown(250);
+            $('#results-box').slideDown(150);
             $('#predicted-text').html(predictedText);
             $('#predicted-result').html(predictedResult);
+            $('#range-error').html(rangeError);
 
             event.preventDefault();
         });
 
         // Reset buttons
         $('#reset-unit').click(function() {
-            $('#showquestion>div').slideUp(250, function() {
-                $('.unit-selection').slideDown(250);
+            $('#showquestion>div').slideUp(150, function() {
+                $('.unit-selection').slideDown(150);
             });
             $("input[type=text]").val("");
-            $('#reset-buttons').slideUp(200);
+            $('#reset-buttons').slideUp(100);
             $('footer').removeClass('expanded');
             $('.small').removeClass('expanded');
         });
 
         $('#reset-questions').click(function() {
             $("input[type=text]").val("");
-            $('#results-box').slideUp(250);
+            $('#results-box').slideUp(150);
         });
 
     });

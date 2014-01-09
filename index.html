@@ -8,9 +8,6 @@
         <link href="img/favicon.ico" rel="shortcut icon" type="image/icon">
         <link type="text/css" href="css/main.css?r=1" rel="stylesheet">
         <link type="text/css" href="css/modal.css?r=1" rel="stylesheet">
-        <!--[if lte IE 8]>
-            <script type="text/javascript" src="html5-shiv.js"></script>
-        <![endif]-->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,7 +25,7 @@
 
     <body>
 
-        <!-- Area of questions area of page -->
+        <!-- Main Bit -->
         <main>
 
             <header>
@@ -97,6 +94,7 @@
                 <div id="results-box" class="results" style="display: none;">
                     <p id="predicted-text"><b>Your predicted marathon time is:</b></p>
                     <p id="predicted-result"></p>
+                    <p><span id="range-error"></span></p>
                 </div>
 
             </section>
@@ -139,7 +137,14 @@
         </section>
         <!--<![endif]-->
 
-        <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/html5-shiv.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+        <!--<![endif]-->
+
         <script type="text/javascript" src="js/main.js?r=2"></script>
 
     </body>
