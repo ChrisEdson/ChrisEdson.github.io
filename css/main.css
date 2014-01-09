@@ -136,6 +136,10 @@ div.results {
     background-color: white;
 }
 
+.answers span {
+    color: #ACACAC;
+}
+
 .ie-warning {
     background-color: rgb(255, 165, 165);
 }
