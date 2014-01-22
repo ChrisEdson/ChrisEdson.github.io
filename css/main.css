@@ -1,4 +1,28 @@
+body, html {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #5d5e5f;
+    font-weight: 100;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
 
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    float: none;
+}
+
+.nav a {
+    color: #777;
+}
 
 .clearfix {
     zoom: 1;
