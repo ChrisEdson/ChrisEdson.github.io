@@ -231,7 +231,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 6068,
+				"buffer_size": 6085,
 				"line_ending": "Windows"
 			}
 		},
@@ -725,15 +725,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6068,
+						"buffer_size": 6085,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3374,
-								3374
+								2088,
+								2088
 							]
 						],
 						"settings":
@@ -743,7 +743,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2716.0,
+						"translation.y": 1576.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

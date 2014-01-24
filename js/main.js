@@ -34,18 +34,25 @@ $('document').ready(function () {
         "Winding down"
         ];
     $('.profile-picture').click(function() {
-        $('.popup').html(popupMessage[clickiterate]);
-        clickiterate++;
-        // Only pop it up when in original position
-        if ($('.popup').css("top")=="66px") {
-            $('.popup').animate({top: "222px"}, 200);
+        // Only restart if at end and in original place
+        if ($('.popup').html()=="Zzzzzzzzzzzzzz" && $('.popup').css("top")=="66px") {
+            clickiterate=0;
         }
-        // When at end of loop, display final message
-        if (clickiterate==20) {
+
+        $('.popup').html(popupMessage[clickiterate]);
+
+        if (clickiterate<20) {         
+            clickiterate++;
+        } else {
+            // When at end of loop, display final message and bring popup up with a delay
             setTimeout(function() {
                 $('.popup').animate({top: "66px"}, 2000).html("Zzzzzzzzzzzzzz");
-            }, 1200);
-            clickiterate=0;
+            }, 1000);
+        }
+
+        // Only pop it up when in original position
+        if ($('.popup').css("top")=="66px" && clickiterate<20) {
+            $('.popup').animate({top: "222px"}, 200);
         }
 
     });
