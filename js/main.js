@@ -16,14 +16,14 @@ $('document').ready(function () {
         "I'm serious",
         "What's your obsession with this?",
         "You're hurting my face",
-        "What do you think this is?",
+        "What do you think this is? A game?",
         "Is life just a game to you?",
         "I can keep going longer than you can",
         "I'm serious, the guy who wrote this is a dull guy",
         "Like, he spent a while typing responses",
         "Probably too long",
         "He could have spent that time helping the homeless",
-        "Or at least, thinking about helping the homeless",
+        "Or thinking about helping the homeless",
         "But no, he didn't, all because of you",
         "Yeh, you made him do this",
         "Sort of",
@@ -42,7 +42,9 @@ $('document').ready(function () {
         }
         // When at end of loop, display final message
         if (clickiterate==20) {
-            $('.popup').delay(300).animate({top: "66px"}, 200);
+            setTimeout(function() {
+                $('.popup').animate({top: "66px"}, 2000).html("Zzzzzzzzzzzzzz");
+            }, 1200);
             clickiterate=0;
         }
 
