@@ -115,6 +115,7 @@ h3 {
     -moz-transition: all 0.15s ease-in-out;
     -o-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
+    cursor: pointer;
 }
 
 .profile-picture:hover {
@@ -124,6 +125,14 @@ h3 {
 .popup {
     position: absolute;
     text-align: center;
+    top: 66px;
+    z-index: -1;
+    color: black;
+    right: 0;
+    left: 0;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Marquee Scroll */
