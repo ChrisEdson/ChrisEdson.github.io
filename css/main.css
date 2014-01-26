@@ -14,7 +14,6 @@ h1, h2, h3 {
     font-weight: 300;
     letter-spacing: 0.02em;
     word-spacing: 0.05em;
-    text-transform: uppercase;
 }
 
 h2 {
@@ -23,7 +22,6 @@ h2 {
 
 h3 {
     font-size: 24px;
-    text-transform: none;
 }
 
 .navbar {
@@ -79,11 +77,12 @@ h3 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: #3498db;
 }
 
 .jumbo header {
     color: #fff;
-    padding-top: 13%;
+    padding-top: 20%;
 }
 
 .profile-picture-container {
@@ -138,7 +137,7 @@ h3 {
 /* Marquee Scroll */
 .marquee {
     width: 300px;
-    height: 40px;
+    height: 45px;
     margin: 25px auto;
     overflow: hidden;
     position: relative;
@@ -347,14 +346,20 @@ h3 {
     background: #3498db;
 }
 
-.profile, .development, .strategy, .music {
+.profile, .development, .strategy, .music, .contact {
     background: #fff;
     text-align: center;
     width: 100%;
+    padding-bottom: 40px;
 }
 
-.development, .music {
+.strategy, .music {
     background: #f7f7f7;
+}
+
+.contact {
+    background: #3498db;
+    padding-bottom: 100px;
 }
 
 .section-title {
@@ -362,11 +367,10 @@ h3 {
     text-align: center;
     color: #555;
     padding: 30px 0;
-    text-transform: none;
 }
 
 .section-subtitle {
-    padding: 30px 0;
+    padding-top: 30px;
 }
 
 .chart {
@@ -374,7 +378,7 @@ h3 {
     display: inline-block;
     width: 150px;
     height: 150px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -395,6 +399,43 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.progress {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #D4D4D4;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #3498db;
+}
+
+.progress-bar-percent {
+    font-size: 13px;
+    position: absolute;
+    left: 0;
+    color: white;
+    -webkit-transition: left .6s ease;
+    transition: left .6s ease;
+}
+
+.soundcloud {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.contact .spacer {
+    background: white;
+}
+
+.contact h2, .contact p {
+    color: white;
 }
 
 .clearfix {
