@@ -1,15 +1,5 @@
 $('document').ready(function () {
 
-    // Activate top slideshow
-    // $.vegas('slideshow', {
-    //     backgrounds:[
-    //     {src: "img/slider/01.jpg",fade: 1000},
-    //     {src: "img/slider/02.jpg",fade: 1000},
-    //     {src: "img/slider/03.jpg",fade: 1000},
-    //     {src: "img/slider/04.png",fade: 1000}
-    //     ]
-    //     })('overlay');
-
     // Activate scrolling
     $('#main-nav').onePageNav({
         currentClass: "active",
@@ -82,5 +72,15 @@ $('document').ready(function () {
         $(this).next().css("left", ($(this).attr("aria-valuenow")-15)+'%');
     },
     {triggerOnce: !0,offset: "bottom-in-view"});
+
+    // Trying to get contact to be active when at bottom of page...
+    // $(window).scroll(function(){
+    //     if ($(window).scrollTop() > $(document).height()-$(window).height()-500){
+    //         $('.active').removeClass('active');
+    //         $('#main-nav li:last-child').addClass('active');
+    //     } else {
+    //         $('#main-nav li:last-child').removeClass('active');
+    //     }
+    // });
 
 });
