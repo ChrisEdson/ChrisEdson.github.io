@@ -11,10 +11,10 @@ $('document').ready(function () {
     //     })('overlay');
 
     // Activate scrolling
-    $("#main-nav").onePageNav({
+    $('#main-nav').onePageNav({
         currentClass: "active",
         changeHash: !1,
-        scrollThreshold: .5,
+        scrollThreshold: 0.5,
         scrollSpeed: 750,
         filter: "",
         easing: "swing"
