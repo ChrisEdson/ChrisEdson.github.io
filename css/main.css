@@ -27,6 +27,7 @@ h3 {
 .navbar {
     background: rgba(255,255,255);
     background: rgba(255,255,255,.85);
+    border-bottom: 0;
 }
 
 .navbar-collapse {
@@ -44,6 +45,10 @@ h3 {
 
 .nav a {
     color: #777;
+}
+
+.active {
+    background: rgba(52, 152, 219, 0.16);
 }
 
 .vegas-background, .vegas-overlay {
