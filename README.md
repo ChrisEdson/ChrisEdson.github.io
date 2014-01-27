@@ -11,3 +11,5 @@ To do:
 - [ ] Add better contact / location / social network
 - [ ] Fix mobile / scrolling
 - [ ] Have navbar disappear on mobile
+- [ ] Add easter egg when user clicks through all options
+- [ ] Fix easter egg to display

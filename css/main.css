@@ -25,7 +25,7 @@ h3 {
 }
 
 .navbar {
-    background: rgba(255,255,255);
+    background: rgb(255,255,255);
     background: rgba(255,255,255,.85);
     border-bottom: 0;
 }
@@ -51,17 +51,8 @@ h3 {
     background: rgba(52, 152, 219, 0.16);
 }
 
-.vegas-background, .vegas-overlay {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 .vegas-background {
     -ms-interpolation-mode: bicubic;
-    image-rendering: optimizeQuality;
     max-width: none!important;
     z-index: -2;
 }
@@ -100,7 +91,6 @@ h3 {
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
     border: 20px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
@@ -115,7 +105,7 @@ h3 {
     -ms-border-radius: 225px;
     -o-border-radius: 225px;
     border-radius: 225px;
-    webkit-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
     -o-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;

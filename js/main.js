@@ -2,7 +2,6 @@ $('document').ready(function () {
 
     // Activate scrolling
     $('#main-nav').onePageNav({
-        // currentClass: "active",
         changeHash: !1,
         scrollThreshold: 0.5,
         scrollSpeed: 750,
@@ -34,25 +33,25 @@ $('document').ready(function () {
         "Ok, going to sleep now",
         "Winding down"
         ];
-    $('.profile-picture').click(function() {
+    $('.profile-picture').click(function () {
         // Only restart if at end and in original place
-        if ($('.popup').html()=="Zzzzzzzzzzzzzz" && $('.popup').css("top")=="66px") {
+        if ($('.popup').html() == "Zzzzzzzzzzzzzz" && $('.popup').css("top") == "66px") {
             clickiterate=0;
         }
 
         $('.popup').html(popupMessage[clickiterate]);
 
-        if (clickiterate<popupMessage.length) {
+        if (clickiterate < popupMessage.length) {
             clickiterate++;
         } else {
             // When at end of loop, display final message and bring popup up with a delay
-            setTimeout(function() {
+            setTimeout(function () {
                 $('.popup').animate({top: "66px"}, 2000).html("Zzzzzzzzzzzzzz");
             }, 1000);
         }
 
         // Only pop it up when in original position
-        if ($('.popup').css("top")=="66px" && clickiterate<20) {
+        if ($('.popup').css("top") == "66px" && clickiterate<20) {
             $('.popup').animate({top: "222px"}, 200);
         }
 
@@ -72,15 +71,5 @@ $('document').ready(function () {
         $(this).next().css("left", ($(this).attr("aria-valuenow")-15)+'%');
     },
     {triggerOnce: !0,offset: "bottom-in-view"});
-
-    // Trying to get contact to be active when at bottom of page...
-    // $(window).scroll(function(){
-    //     if ($(window).scrollTop() > $(document).height()-$(window).height()-500){
-    //         $('.active').removeClass('active');
-    //         $('#main-nav li:last-child').addClass('active');
-    //     } else {
-    //         $('#main-nav li:last-child').removeClass('active');
-    //     }
-    // });
 
 });
