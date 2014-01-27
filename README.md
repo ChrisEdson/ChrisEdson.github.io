@@ -13,3 +13,4 @@ To do:
 - [ ] Have navbar disappear on mobile
 - [ ] Add easter egg when user clicks through all options
 - [x] Fix easter egg to display
+- [ ] Change profile picture?

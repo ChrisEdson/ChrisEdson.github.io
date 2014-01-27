@@ -146,7 +146,7 @@ h3 {
     position: relative;
 }
 
-.popup {
+.popup, .popup-two {
     position: absolute;
     text-align: center;
     top: -180px;
@@ -462,6 +462,11 @@ h3 {
 
 .contact h2, .contact p {
     color: white;
+}
+
+.image-loader {
+    background: url('../img/profile-cat.jpg');
+    display: none;
 }
 
 .clearfix {
