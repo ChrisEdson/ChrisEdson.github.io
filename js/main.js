@@ -17,7 +17,7 @@ $('document').ready(function () {
         "What's your obsession with this?",
         "You're hurting my face",
         "What do you think this is? A game?",
-        "Is life just a game to you?",
+        "Right, so life just a game to you?",
         "I can keep going longer than you can",
         "I'm serious, the guy who wrote this is a dull guy",
         "Like, he spent a while typing responses",
@@ -33,9 +33,9 @@ $('document').ready(function () {
         "Ok, going to sleep now",
         "Winding down"
         ];
-    $('.profile-picture').click(function () {
+    $('.profile-picture, .profile-picture-hover').click(function () {
         // Only restart if at end and in original place
-        if ($('.popup').html() == "Zzzzzzzzzzzzzz" && $('.popup').css("top") == "66px") {
+        if ($('.popup').html() == "Zzzzzzzzzzzzzz" && $('.popup').css("top") == "-180px") {
             clickiterate=0;
         }
 
@@ -46,13 +46,13 @@ $('document').ready(function () {
         } else {
             // When at end of loop, display final message and bring popup up with a delay
             setTimeout(function () {
-                $('.popup').animate({top: "66px"}, 2000).html("Zzzzzzzzzzzzzz");
-            }, 1000);
+                $('.popup').animate({top: "-180px"}, 2000).html("Zzzzzzzzzzzzzz");
+            }, 800);
         }
 
         // Only pop it up when in original position
-        if ($('.popup').css("top") == "66px" && clickiterate<20) {
-            $('.popup').animate({top: "222px"}, 200);
+        if ($('.popup').css("top") == "-180px" && clickiterate<20) {
+            $('.popup').animate({top: "-46px"}, 200);
         }
 
     });
