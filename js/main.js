@@ -2,7 +2,7 @@ $('document').ready(function () {
 
     // Activate scrolling
     $('#main-nav').onePageNav({
-        currentClass: "active",
+        // currentClass: "active",
         changeHash: !1,
         scrollThreshold: 0.5,
         scrollSpeed: 750,

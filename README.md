@@ -9,3 +9,5 @@ To do:
 - [ ] Add portfolio
 - [ ] Add delay to graph display
 - [ ] Add better contact / location / social network
+- [ ] Fix mobile / scrolling
+- [ ] Have navbar disappear on mobile
