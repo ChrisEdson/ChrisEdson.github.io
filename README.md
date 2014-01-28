@@ -3,7 +3,7 @@
 This is my personal website, [chrisedson.co.uk](http://chrisedson.co.uk).
 
 To do:
-- [ ] Add hrefs to projects
+- [x] Add hrefs to projects
 - [ ] Tweak copy
 - [x] Fix contact highlight
 - [ ] Add portfolio
@@ -11,6 +11,6 @@ To do:
 - [ ] Add better contact / location / social network
 - [ ] Fix mobile / scrolling
 - [ ] Have navbar disappear on mobile
-- [ ] Add easter egg when user clicks through all options
+- [x] Add easter egg when user clicks through all options
 - [x] Fix easter egg to display
 - [ ] Change profile picture?

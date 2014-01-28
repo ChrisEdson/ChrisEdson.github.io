@@ -24,6 +24,10 @@ h3 {
     font-size: 24px;
 }
 
+a:hover, a:focus {
+    text-decoration: none;
+}
+
 .navbar {
     background: rgb(255,255,255);
     background: rgba(255,255,255,.85);
@@ -378,7 +382,7 @@ h3 {
 }
 
 .strategy, .music {
-    background: #f7f7f7;
+    background: #F1F1F1;
 }
 
 .contact {
@@ -461,7 +465,7 @@ h3 {
     background: white;
 }
 
-.contact h2, .contact p {
+.contact h2, .contact p, .contact a {
     color: white;
 }
 
