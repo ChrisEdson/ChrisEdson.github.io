@@ -39,11 +39,11 @@ $('document').ready(function () {
         "WHY DO YOU INSIST, DEMON?",
         "Ok, you win",
         "I am now a cat"
-    ]
+    ];
 
     $('.profile-picture, .profile-picture-hover').click(function () {
         // First popup
-        if (secret == false) {
+        if (secret === false) {
             // Only restart if at end and in original place
             if ($('.popup').html() == "Zzzzzzzzzzzzzz" && $('.popup').css("top") == "-180px") {
                 clickiterate=0;
@@ -81,8 +81,8 @@ $('document').ready(function () {
     // Activate pie charts
     $(".chart").waypoint(function() {
         $(this).easyPieChart({barColor: "#3498db",size: "150",easing: "easeOutBounce",onStep: function(e, i, a) {
-            $(this.el).find(".percent").text(Math.round(a))
-        }})
+            $(this.el).find(".percent").text(Math.round(a));
+        }});
     },
     {triggerOnce: !0,offset: "bottom-in-view"});
 

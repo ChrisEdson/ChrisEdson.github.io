@@ -48,6 +48,7 @@ h3 {
 }
 
 .active {
+    background: rgb(52, 152, 219);
     background: rgba(52, 152, 219, 0.16);
 }
 
@@ -91,6 +92,7 @@ h3 {
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
+    border: 20px solid rgb(0, 0, 0);
     border: 20px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     overflow: hidden;
@@ -115,6 +117,7 @@ h3 {
 }
 
 .profile-picture-hover {
+    background: rgb(255, 255, 255);
     background: rgba(255, 255, 255, 0.7);
     width: 100%;
     height: 100%;
@@ -174,28 +177,24 @@ h3 {
     height: 100%;
     margin: 0;
     line-height: 1;
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -moz-transform:translateY(100%);
+    -webkit-transform:translateY(100%);
+    transform:translateY(100%);
 }
 
 .marquee h2:nth-child(1) {
-    transform:translateY(100%);
-    -moz-transform:translateY(100%);
-    -webkit-transform:translateY(100%);
-    animation: one 8s ease infinite;
     -moz-animation: one 8s ease infinite;
     -webkit-animation: one 8s ease infinite;
+    animation: one 8s ease infinite;
 }
 .marquee h2:nth-child(2) {
-    transform:translateY(100%);
-    -moz-transform:translateY(100%);
-    -webkit-transform:translateY(100%);
     animation: two 8s ease infinite;
     -moz-animation: two 8s ease infinite;
     -webkit-animation: two 8s ease infinite;
 }
 .marquee h2:nth-child(3) {
-    transform:translateY(100%);
-    -moz-transform:translateY(100%);
-    -webkit-transform:translateY(100%);
     animation: three 8s ease infinite;
     -moz-animation: three 8s ease infinite;
     -webkit-animation: three 8s ease infinite;
@@ -444,6 +443,8 @@ h3 {
     position: absolute;
     left: 0;
     color: white;
+    -o-transition: left .6s ease;
+    -moz-transition: left .6s ease;
     -webkit-transition: left .6s ease;
     transition: left .6s ease;
 }
