@@ -24,6 +24,10 @@ h3 {
     font-size: 24px;
 }
 
+img {
+    max-width: 100%;
+}
+
 a:hover, a:focus {
     text-decoration: none;
 }
@@ -431,6 +435,61 @@ a:hover, a:focus {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.isotope {
+    -webkit-transition-property: height,width;
+    -moz-transition-property: height,width;
+    -ms-transition-property: height,width;
+    -o-transition-property: height,width;
+    transition-property: height,width;
+}
+
+.isotope, .isotope .isotope-item {
+    -webkit-transition-duration: .8s;
+    -moz-transition-duration: .8s;
+    -ms-transition-duration: .8s;
+    -o-transition-duration: .8s;
+    transition-duration: .8s;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+
+.portfolio .mix {
+    width: 200px;
+    height: 150px;
+    vertical-align: top;
+    margin: 20px 20px 20px 0;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.portfolio .mix .overlay {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    opacity: 0;
+}
+
+.portfolio .mix .overlay:hover {
+    opacity: .8;
+    background: #3498db;
+}
+
+.portfolio .mix .overlay i {
+    font-size: 2em;
+    opacity: 1;
+    color: #fff;
+    padding-top: 30%;
+}
+
+.glyphicon {
+    color: #fff;
+    line-height: 150px;
+    font-size: 30px;
 }
 
 .progress {
