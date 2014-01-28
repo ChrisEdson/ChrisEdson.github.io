@@ -93,19 +93,11 @@ $('document').ready(function () {
     },
     {triggerOnce: !0,offset: "bottom-in-view"});
 
+    var e = $(".portfolio");
+    e.isotope({filter: "*",animationOptions: {duration: 750,easing: "linear",queue: !1}});
+
+    $(".portfolio").magnificPopup({delegate: "a",type: "image",gallery: {enabled: !0}});
+
 });
 
-// Only loads when all images loaded
-$(window).load(function() {
-        var e = $(".grid-wrapper");
-        e.isotope({filter: "*",animationOptions: {duration: 750,easing: "linear",queue: !1}});
 
-        $(".grid-controls li a").click(function() {
-            $(".grid-controls .current").removeClass("current");
-            $(this).addClass("current");
-            var i = $(this).attr("data-filter");
-            return e.isotope({filter: i,animationOptions: {duration: 750,easing: "linear",queue: !1}}), !1;
-        });
-    });
-
-$(".grid-wrapper").magnificPopup({delegate: "a",type: "image",gallery: {enabled: !0}});
