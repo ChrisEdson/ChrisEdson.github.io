@@ -6,11 +6,10 @@ To do:
 - [x] Add hrefs to projects
 - [ ] Tweak copy
 - [x] Fix contact highlight
-- [ ] Add portfolio
+- [x] Add portfolio
 - [x] Add delay to graph display
 - [ ] Add better contact / location / social network
 - [ ] Fix mobile / scrolling
-- [ ] Have navbar disappear on mobile
+- [x] Have navbar disappear on mobile
 - [x] Add easter egg when user clicks through all options
 - [x] Fix easter egg to display
-- [ ] Change profile picture?
