@@ -68,6 +68,7 @@ a:hover, a:focus {
     width: 100%;
     height: 75%;
     min-height: 650px;
+    max-height: 800px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -80,7 +81,11 @@ a:hover, a:focus {
 
 .home header {
     color: #fff;
-    padding-top: 15%;
+}
+
+.header-spacer {
+    height: 20%;
+    min-height: 100px;
 }
 
 .profile-picture-container {
