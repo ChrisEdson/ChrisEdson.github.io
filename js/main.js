@@ -21,7 +21,7 @@ $('document').ready(function () {
         "What's your obsession with this?",
         "You're hurting my face",
         "What do you think this is? A game?",
-        "Right, so life just a game to you?",
+        "Right, so life is just a game to you?",
         "I can keep going longer than you can",
         "I'm serious, the guy who wrote this is a dull guy",
         "Like, he spent a while typing responses",
