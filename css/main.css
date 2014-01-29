@@ -391,7 +391,7 @@ a:hover, a:focus {
 
 .contact {
     background: #3498db;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .section-title {
@@ -539,8 +539,12 @@ a:hover, a:focus {
     background: white;
 }
 
-.contact h2, .contact p, .contact a {
+.contact h2, .contact p {
     color: white;
+}
+
+.contact a {
+    color: rgb(207, 207, 207);
 }
 
 .image-loader {
