@@ -8,7 +8,7 @@ To do:
 - [x] Fix contact highlight
 - [x] Add portfolio
 - [x] Add delay to graph display
-- [ ] Add better contact / location / social network
+- [x] Add better contact / location / social network
 - [x] Fix mobile / scrolling
 - [x] Have navbar disappear on mobile
 - [x] Add easter egg when user clicks through all options

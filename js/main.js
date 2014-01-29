@@ -9,6 +9,8 @@ $('document').ready(function () {
         easing: "swing"
     });
 
+    $('.marquee').addClass('animation');
+
     // Easter egg
     var clickiterate = 0;
     var clickiterateTwo = 0;
