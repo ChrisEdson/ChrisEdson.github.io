@@ -1,8 +1,0 @@
-logs/*
-!.gitkeep
-
-*.yml
-
-*.sublime-project
-
-*.sublime-workspace
