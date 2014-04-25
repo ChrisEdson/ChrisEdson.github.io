@@ -95,8 +95,8 @@ $('document').ready(function () {
     },
     {triggerOnce: !0,offset: "bottom-in-view"});
 
-    var e = $(".portfolio");
-    e.isotope({filter: "*",animationOptions: {duration: 750,easing: "linear",queue: !1}});
+    // var e = $(".portfolio");
+    // e.isotope({filter: "*",animationOptions: {duration: 750,easing: "linear",queue: !1}});
 
     $(".portfolio").magnificPopup({delegate: "a",type: "image",gallery: {enabled: !0}});
 
