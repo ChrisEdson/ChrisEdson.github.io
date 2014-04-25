@@ -1,6 +1,6 @@
-@import '../libs/bootstrap.min.scss';
-@import '../libs/magnific-popup.scss';
-@import 'fonts.scss';
+@import "../libs/bootstrap.min.scss";
+@import "../libs/magnific-popup.scss";
+@import "fonts.scss";
 
 body, html {
     font-family: Roboto, sans-serif;
@@ -37,8 +37,8 @@ a:hover, a:focus {
 }
 
 .navbar {
-    background: rgb(255,255,255);
-    background: rgba(255,255,255,.85);
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.85);
     border-bottom: 0;
 }
 
@@ -59,7 +59,7 @@ a:hover, a:focus {
     color: #777;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background: none;
 }
 
@@ -111,7 +111,7 @@ a:hover, a:focus {
 
 .profile-picture {
     display: block;
-    background: url('../../img/profile-picture.jpg') no-repeat;
+    background: url("../../img/profile-picture.jpg") no-repeat;
     height: 200px;
     width: 200px;
     -webkit-border-radius: 225px;
@@ -189,9 +189,9 @@ a:hover, a:focus {
     line-height: 1;
     -ms-transform: translateY(100%);
     -o-transform: translateY(100%);
-    -moz-transform:translateY(100%);
-    -webkit-transform:translateY(100%);
-    transform:translateY(100%);
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
 }
 
 .animation h2:nth-child(1) {
@@ -199,11 +199,13 @@ a:hover, a:focus {
     -webkit-animation: one 8s ease infinite;
     animation: one 8s ease infinite;
 }
+
 .animation h2:nth-child(2) {
     animation: two 8s ease infinite;
     -moz-animation: two 8s ease infinite;
     -webkit-animation: two 8s ease infinite;
 }
+
 .animation h2:nth-child(3) {
     animation: three 8s ease infinite;
     -moz-animation: three 8s ease infinite;
@@ -212,168 +214,183 @@ a:hover, a:focus {
 
 @-moz-keyframes one {
     0% {
-        -moz-transform:translateY(-80%);
+        -moz-transform: translateY(-80%);
     }
     10% {
-        -moz-transform:translateY(0);
+        -moz-transform: translateY(0);
     }
     33% {
-        -moz-transform:translateY(0);
+        -moz-transform: translateY(0);
     }
     43% {
-        -moz-transform:translateY(100%);
+        -moz-transform: translateY(100%);
     }
-    100%{
-        -moz-transform:translateY(100%);
+    100% {
+        -moz-transform: translateY(100%);
     }
 }
+
+
 @-moz-keyframes two {
     0% {
-        -moz-transform:translateY(-100%);
+        -moz-transform: translateY(-100%);
     }
     33% {
-        -moz-transform:translateY(-100%);
+        -moz-transform: translateY(-100%);
     }
     43% {
-        -moz-transform:translateY(0);
+        -moz-transform: translateY(0);
     }
     66% {
-        -moz-transform:translateY(0);
-    }
-    76%{
-        -moz-transform:translateY(100%);
-    }
-    100%{
-        -moz-transform:translateY(100%);
-    }
-}
-@-moz-keyframes three {
-    0% {
-        -moz-transform:translateY(-100%);
-    }
-    66% {
-        -moz-transform:translateY(-100%);
+        -moz-transform: translateY(0);
     }
     76% {
-        -moz-transform:translateY(0);
+        -moz-transform: translateY(100%);
     }
-    90% {
-        -moz-transform:translateY(0);
-    }
-    100%{
-        -moz-transform:translateY(100%);
+    100% {
+        -moz-transform: translateY(100%);
     }
 }
+
+
+@-moz-keyframes three {
+    0% {
+        -moz-transform: translateY(-100%);
+    }
+    66% {
+        -moz-transform: translateY(-100%);
+    }
+    76% {
+        -moz-transform: translateY(0);
+    }
+    90% {
+        -moz-transform: translateY(0);
+    }
+    100% {
+        -moz-transform: translateY(100%);
+    }
+}
+
 
 @-webkit-keyframes one {
     0% {
-        -webkit-transform:translateY(-80%);
+        -webkit-transform: translateY(-80%);
     }
     10% {
-        -webkit-transform:translateY(0);
+        -webkit-transform: translateY(0);
     }
     33% {
-        -webkit-transform:translateY(0);
+        -webkit-transform: translateY(0);
     }
     43% {
-        -webkit-transform:translateY(100%);
+        -webkit-transform: translateY(100%);
     }
     100% {
-        -webkit-transform:translateY(100%);
-    }
-}
-@-webkit-keyframes two {
-    0% {
-        -webkit-transform:translateY(-100%);
-    }
-    33% {
-        -webkit-transform:translateY(-100%);
-    }
-    43% {
-        -webkit-transform:translateY(0);
-    }
-    66% {
-        -webkit-transform:translateY(0);
-    }
-    76% {
-        -webkit-transform:translateY(100%);
-    }
-    100% {
-        -webkit-transform:translateY(100%);
-    }
-}
-@-webkit-keyframes three {
-    0% {
-        -webkit-transform:translateY(-100%);
-    }
-    66% {
-        -webkit-transform:translateY(-100%);
-    }
-    76% {
-        -webkit-transform:translateY(0);
-    }
-    90% {
-        -webkit-transform:translateY(0);
-    }
-    100% {
-        -webkit-transform:translateY(100%);
+        -webkit-transform: translateY(100%);
     }
 }
 
-@keyframes one {
+
+@-webkit-keyframes two {
     0% {
-        transform:translateY(-80%);
-    }
-    10% {
-        transform:translateY(0);
+        -webkit-transform: translateY(-100%);
     }
     33% {
-        transform:translateY(0);
+        -webkit-transform: translateY(-100%);
     }
     43% {
-        transform:translateY(100%);
-    }
-    100%{
-        transform:translateY(100%);
-    }
-}
-@keyframes two {
-    0% {
-        transform:translateY(-100%);
-    }
-    33% {
-        transform:translateY(-100%);
-    }
-    43% {
-        transform:translateY(0);
+        -webkit-transform: translateY(0);
     }
     66% {
-        transform:translateY(0);
-    }
-    76%{
-        transform:translateY(100%);
-    }
-    100%{
-        transform:translateY(100%);
-    }
-}
-@keyframes three {
-    0% {
-        transform:translateY(-100%);
-    }
-    66% {
-        transform:translateY(-100%);
+        -webkit-transform: translateY(0);
     }
     76% {
-        transform:translateY(0);
+        -webkit-transform: translateY(100%);
     }
-    90% {
-        transform:translateY(0);
-    }
-    100%{
-        transform:translateY(100%);
+    100% {
+        -webkit-transform: translateY(100%);
     }
 }
+
+
+@-webkit-keyframes three {
+    0% {
+        -webkit-transform: translateY(-100%);
+    }
+    66% {
+        -webkit-transform: translateY(-100%);
+    }
+    76% {
+        -webkit-transform: translateY(0);
+    }
+    90% {
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(100%);
+    }
+}
+
+
+@keyframes one {
+    0% {
+        transform: translateY(-80%);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(0);
+    }
+    43% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+@keyframes two {
+    0% {
+        transform: translateY(-100%);
+    }
+    33% {
+        transform: translateY(-100%);
+    }
+    43% {
+        transform: translateY(0);
+    }
+    66% {
+        transform: translateY(0);
+    }
+    76% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+@keyframes three {
+    0% {
+        transform: translateY(-100%);
+    }
+    66% {
+        transform: translateY(-100%);
+    }
+    76% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
 
 .spacer {
     width: 100px;
@@ -471,6 +488,7 @@ a:hover, a:focus {
 }
 
 .portfolio li {
+    position: relative;
     width: 200px;
     height: 150px;
     vertical-align: top;
@@ -546,7 +564,7 @@ a:hover, a:focus {
 }
 
 .image-loader {
-    background: url('../../img/profile-cat.jpg');
+    background: url("../../img/profile-cat.jpg");
     display: none;
 }
 
