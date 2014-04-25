@@ -5522,15 +5522,15 @@ a:hover, a:focus {
 .portfolio {
   position: relative;
   overflow: hidden;
-  height: 190px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding: 0; }
 
 .portfolio li {
   position: relative;
   width: 200px;
   height: 150px;
   vertical-align: top;
-  margin: 20px 20px 20px 0;
+  margin: 20px;
   color: #fff;
   text-align: center;
   display: inline-block;

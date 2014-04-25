@@ -81,7 +81,7 @@ $('document').ready(function () {
 
     });
 
-    // Activate pie charts
+    // Activate pie chart animation
     $(".chart").waypoint(function() {
         $(this).easyPieChart({barColor: "#3498db",size: "150",easing: "easeOutBounce",onStep: function(e, i, a) {
             $(this.el).find(".percent").text(Math.round(a));
@@ -89,16 +89,14 @@ $('document').ready(function () {
     },
     {triggerOnce: !0,offset: "bottom-in-view"});
 
-    // Activate bar charts
+    // Activate bar chart animation
     $(".progress-bar").waypoint(function() {
         $(this).css("width", $(this).attr("aria-valuenow")+'%');
         $(this).next().css("left", ($(this).attr("aria-valuenow")-15)+'%');
     },
     {triggerOnce: !0,offset: "bottom-in-view"});
 
-    // var e = $(".portfolio");
-    // e.isotope({filter: "*",animationOptions: {duration: 750,easing: "linear",queue: !1}});
-
+    // Activate pop-up portfolio
     $(".portfolio").magnificPopup({delegate: "a",type: "image",gallery: {enabled: !0}});
 
 });
