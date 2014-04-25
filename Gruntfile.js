@@ -55,24 +55,27 @@ module.exports = function(grunt) {
         },
 
         sass: {
-            dev: {
-                files: {
-                    'css/build/site.min.css': 'css/src/main.scss'
-                }
-            },
-            prod: {
-                options: {
-                    style: 'compressed'
-                },
+            main: {
                 files: {
                     'css/build/site.min.css': 'css/src/main.scss'
                 }
             }
         },
 
-        connect: {
-            server: {
+        cssmin: {
+            main: {
+                options: {
+                    banner: '/*! <%= pkg.name %> - © Chris Edson <%= grunt.template.today("dd-mm-yyyy") %> */',
+                    keepSpecialComments: 0
+                },
+                files: {
+                    'css/build/site.min.css': 'css/build/site.min.css'
+                }
             }
+        },
+
+        connect: {
+            server: {}
         },
 
         watch: {
@@ -88,7 +91,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['css/src/*.scss'],
-                tasks: ['sass:dev'],
+                tasks: ['sass'],
                 options: {
                     spawn: false,
                 }
@@ -102,7 +105,9 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
+
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.loadNpmTasks('grunt-contrib-compress');
 
@@ -111,10 +116,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'sass:dev']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass']);
 
-    grunt.registerTask('dev', ['concat', 'sass:dev']);
+    grunt.registerTask('dev', ['concat', 'sass']);
 
-    grunt.registerTask('prod', ['concat', 'uglify', 'sass:prod']);
+    grunt.registerTask('prod', ['concat', 'uglify', 'sass', 'cssmin']);
 
 };
