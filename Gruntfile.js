@@ -75,7 +75,12 @@ module.exports = function(grunt) {
         },
 
         connect: {
-            server: {}
+            server: {
+                options: {
+                    keepalive: true,
+                    port: 5000
+                }
+            }
         },
 
         watch: {
@@ -98,6 +103,13 @@ module.exports = function(grunt) {
             },
         },
 
+        concurrent: {
+            tasks: ['connect', 'watch'],
+            options: {
+                logConcurrentOutput: true
+            }
+        }
+
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -115,10 +127,12 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.loadNpmTasks('grunt-concurrent');
+
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['concat', 'uglify', 'sass']);
 
-    grunt.registerTask('dev', ['concat', 'sass']);
+    grunt.registerTask('dev', ['concat', 'sass', 'concurrent']);
 
     grunt.registerTask('prod', ['concat', 'uglify', 'sass', 'cssmin']);
 
