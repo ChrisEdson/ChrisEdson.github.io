@@ -1,6 +1,6 @@
 $('document').ready(function () {
 
-    // Activate scrolling
+    // Activate scrolling of header
     $('#main-nav').onePageNav({
         changeHash: !1,
         scrollThreshold: 0.5,
@@ -9,6 +9,7 @@ $('document').ready(function () {
         easing: "swing"
     });
 
+    // Start scrolling of experience
     $('.marquee').addClass('animation');
 
     // Easter egg
