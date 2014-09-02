@@ -104,6 +104,14 @@ module.exports = function(grunt) {
             options: {
                 logConcurrentOutput: true
             }
+        },
+
+        refupdate: {
+            options: {
+                inputFile: 'index.html',
+                regex: /\?r=([0-9]+)"/g
+            },
+            update: {}
         }
 
     });
@@ -125,11 +133,13 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-concurrent');
 
+    grunt.loadNpmTasks('grunt-refupdate');
+
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['concat', 'uglify', 'sass']);
 
     grunt.registerTask('dev', ['concat', 'sass', 'concurrent']);
 
-    grunt.registerTask('prod', ['concat', 'uglify', 'sass', 'cssmin']);
+    grunt.registerTask('prod', ['concat', 'uglify', 'sass', 'cssmin', 'refupdate']);
 
 };
