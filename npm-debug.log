@@ -1,0 +1,797 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/Chris/npm-global/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-sass' ]
+2 info using npm@1.4.3
+3 info using node@v0.12.2
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'grunt-sass', null ]
+6 verbose cache add name=undefined spec="grunt-sass" args=["grunt-sass",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'grunt-sass',
+7 verbose parsed url   path: 'grunt-sass',
+7 verbose parsed url   href: 'grunt-sass' }
+8 silly lockFile 18154330-grunt-sass grunt-sass
+9 verbose lock grunt-sass /Users/Chris/.npm/18154330-grunt-sass.lock
+10 silly lockFile 18154330-grunt-sass grunt-sass
+11 silly lockFile 18154330-grunt-sass grunt-sass
+12 verbose addNamed [ 'grunt-sass', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 49751fc6-grunt-sass grunt-sass@
+15 verbose lock grunt-sass@ /Users/Chris/.npm/49751fc6-grunt-sass.lock
+16 silly addNameRange { name: 'grunt-sass', range: '*', hasData: false }
+17 verbose url raw grunt-sass
+18 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-sass' ]
+19 verbose url resolved https://registry.npmjs.org/grunt-sass
+20 info trying registry request attempt 1 at 6:00:31 PM
+21 verbose etag "1OR4XOCYO5ZM112080ZAFVHEE"
+22 http GET https://registry.npmjs.org/grunt-sass
+23 http 200 https://registry.npmjs.org/grunt-sass
+24 silly registry.get cb [ 200,
+24 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     etag: '"9VS9XEU6SA1NV5XRJL6L4BO40"',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=60',
+24 silly registry.get     'content-length': '41791',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     date: 'Mon, 08 Jun 2015 17:00:24 GMT',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '58',
+24 silly registry.get     connection: 'close',
+24 silly registry.get     'x-served-by': 'cache-lcy1125-LCY',
+24 silly registry.get     'x-cache': 'HIT',
+24 silly registry.get     'x-cache-hits': '1',
+24 silly registry.get     'x-timer': 'S1433782824.210070,VS0,VE0',
+24 silly registry.get     vary: 'Accept' } ]
+25 silly addNameRange number 2 { name: 'grunt-sass', range: '*', hasData: true }
+26 silly addNameRange versions [ 'grunt-sass',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.2.3',
+26 silly addNameRange     '0.2.4',
+26 silly addNameRange     '0.2.5',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1',
+26 silly addNameRange     '0.5.0',
+26 silly addNameRange     '0.6.0',
+26 silly addNameRange     '0.6.1',
+26 silly addNameRange     '0.7.0',
+26 silly addNameRange     '0.8.0',
+26 silly addNameRange     '0.8.1',
+26 silly addNameRange     '0.9.0',
+26 silly addNameRange     '0.10.0',
+26 silly addNameRange     '0.11.0',
+26 silly addNameRange     '0.12.0',
+26 silly addNameRange     '0.12.1',
+26 silly addNameRange     '0.13.0',
+26 silly addNameRange     '0.13.1',
+26 silly addNameRange     '0.14.0',
+26 silly addNameRange     '0.14.1',
+26 silly addNameRange     '0.14.2',
+26 silly addNameRange     '0.15.0',
+26 silly addNameRange     '0.16.0',
+26 silly addNameRange     '0.16.1',
+26 silly addNameRange     '0.17.0',
+26 silly addNameRange     '0.18.0',
+26 silly addNameRange     '0.18.1',
+26 silly addNameRange     '1.0.0' ] ]
+27 verbose addNamed [ 'grunt-sass', '1.0.0' ]
+28 verbose addNamed [ '1.0.0', '1.0.0' ]
+29 silly lockFile 96208c86-grunt-sass-1-0-0 grunt-sass@1.0.0
+30 verbose lock grunt-sass@1.0.0 /Users/Chris/.npm/96208c86-grunt-sass-1-0-0.lock
+31 silly lockFile 56e9decf--grunt-sass-grunt-sass-1-0-0-tgz https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz
+32 verbose lock https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz /Users/Chris/.npm/56e9decf--grunt-sass-grunt-sass-1-0-0-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz',
+33 verbose addRemoteTarball   '84602a9ab0fcb0fe340737612a4ba56cc361bbc4' ]
+34 info retry fetch attempt 1 at 6:00:31 PM
+35 verbose fetch to= /var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/tmp.tgz
+36 http GET https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz
+37 http 200 https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz
+38 verbose tar unpack /var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/tmp.tgz
+39 silly lockFile 485c74b7-1311-0-42475851788185537-package tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package
+40 verbose lock tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package /Users/Chris/.npm/485c74b7-1311-0-42475851788185537-package.lock
+41 silly lockFile ac55d01f-1311-0-42475851788185537-tmp-tgz tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/tmp.tgz
+42 verbose lock tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/tmp.tgz /Users/Chris/.npm/ac55d01f-1311-0-42475851788185537-tmp-tgz.lock
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 silly gunzTarPerm extractEntry package.json
+45 silly gunzTarPerm extractEntry license
+46 silly gunzTarPerm extractEntry tasks/sass.js
+47 silly gunzTarPerm extractEntry readme.md
+48 silly lockFile 485c74b7-1311-0-42475851788185537-package tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package
+49 silly lockFile 485c74b7-1311-0-42475851788185537-package tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package
+50 silly lockFile ac55d01f-1311-0-42475851788185537-tmp-tgz tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/tmp.tgz
+51 silly lockFile ac55d01f-1311-0-42475851788185537-tmp-tgz tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/tmp.tgz
+52 verbose tar pack [ '/Users/Chris/.npm/grunt-sass/1.0.0/package.tgz',
+52 verbose tar pack   '/var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package' ]
+53 verbose tarball /Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+54 verbose folder /var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package
+55 silly lockFile 485c74b7-1311-0-42475851788185537-package tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package
+56 verbose lock tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package /Users/Chris/.npm/485c74b7-1311-0-42475851788185537-package.lock
+57 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+58 verbose lock tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz /Users/Chris/.npm/e935eb62-npm-grunt-sass-1-0-0-package-tgz.lock
+59 silly lockFile 485c74b7-1311-0-42475851788185537-package tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package
+60 silly lockFile 485c74b7-1311-0-42475851788185537-package tar:///var/folders/4j/9syk4jzd7094t8xkt60mkz900000gn/T/npm-86043-1nnJzIJA/1433782831311-0.42475851788185537/package
+61 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+62 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+63 silly lockFile fe06ad2f-ris-npm-grunt-sass-1-0-0-package /Users/Chris/.npm/grunt-sass/1.0.0/package
+64 verbose lock /Users/Chris/.npm/grunt-sass/1.0.0/package /Users/Chris/.npm/fe06ad2f-ris-npm-grunt-sass-1-0-0-package.lock
+65 silly lockFile fe06ad2f-ris-npm-grunt-sass-1-0-0-package /Users/Chris/.npm/grunt-sass/1.0.0/package
+66 silly lockFile fe06ad2f-ris-npm-grunt-sass-1-0-0-package /Users/Chris/.npm/grunt-sass/1.0.0/package
+67 verbose tar unpack /Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+68 silly lockFile 2a3f24c2-ris-npm-grunt-sass-1-0-0-package tar:///Users/Chris/.npm/grunt-sass/1.0.0/package
+69 verbose lock tar:///Users/Chris/.npm/grunt-sass/1.0.0/package /Users/Chris/.npm/2a3f24c2-ris-npm-grunt-sass-1-0-0-package.lock
+70 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+71 verbose lock tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz /Users/Chris/.npm/e935eb62-npm-grunt-sass-1-0-0-package-tgz.lock
+72 silly gunzTarPerm modes [ '755', '644' ]
+73 silly gunzTarPerm extractEntry package.json
+74 silly gunzTarPerm extractEntry readme.md
+75 silly gunzTarPerm extractEntry tasks/sass.js
+76 silly lockFile 2a3f24c2-ris-npm-grunt-sass-1-0-0-package tar:///Users/Chris/.npm/grunt-sass/1.0.0/package
+77 silly lockFile 2a3f24c2-ris-npm-grunt-sass-1-0-0-package tar:///Users/Chris/.npm/grunt-sass/1.0.0/package
+78 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+79 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+80 verbose chmod /Users/Chris/.npm/grunt-sass/1.0.0/package.tgz 644
+81 verbose chown /Users/Chris/.npm/grunt-sass/1.0.0/package.tgz [ 501, 20 ]
+82 silly lockFile 56e9decf--grunt-sass-grunt-sass-1-0-0-tgz https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz
+83 silly lockFile 56e9decf--grunt-sass-grunt-sass-1-0-0-tgz https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz
+84 silly lockFile 96208c86-grunt-sass-1-0-0 grunt-sass@1.0.0
+85 silly lockFile 96208c86-grunt-sass-1-0-0 grunt-sass@1.0.0
+86 silly lockFile 49751fc6-grunt-sass grunt-sass@
+87 silly lockFile 49751fc6-grunt-sass grunt-sass@
+88 silly resolved [ { name: 'grunt-sass',
+88 silly resolved     version: '1.0.0',
+88 silly resolved     description: 'Compile Sass to CSS using node-sass',
+88 silly resolved     license: 'MIT',
+88 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/grunt-sass' },
+88 silly resolved     author:
+88 silly resolved      { name: 'Sindre Sorhus',
+88 silly resolved        email: 'sindresorhus@gmail.com',
+88 silly resolved        url: 'http://sindresorhus.com' },
+88 silly resolved     engines: { node: '>=0.10.0' },
+88 silly resolved     scripts: { test: 'grunt' },
+88 silly resolved     files: [ 'tasks' ],
+88 silly resolved     keywords:
+88 silly resolved      [ 'gruntplugin',
+88 silly resolved        'css',
+88 silly resolved        'sass',
+88 silly resolved        'scss',
+88 silly resolved        'style',
+88 silly resolved        'compile',
+88 silly resolved        'preprocess',
+88 silly resolved        'compile',
+88 silly resolved        'libsass' ],
+88 silly resolved     dependencies:
+88 silly resolved      { 'each-async': '^1.0.0',
+88 silly resolved        'node-sass': '^3.0.0',
+88 silly resolved        'object-assign': '^2.0.0' },
+88 silly resolved     devDependencies:
+88 silly resolved      { grunt: '^0.4.5',
+88 silly resolved        'grunt-cli': '^0.1.13',
+88 silly resolved        'grunt-contrib-clean': '^0.6.0',
+88 silly resolved        'grunt-contrib-nodeunit': '^0.4.1' },
+88 silly resolved     readme: '# grunt-sass [![Build Status](https://travis-ci.org/sindresorhus/grunt-sass.svg?branch=master)](https://travis-ci.org/sindresorhus/grunt-sass)\n\n[<img src="https://rawgit.com/sass/node-sass/master/media/logo.svg" width="200" align="right">](https://github.com/sass/node-sass)\n\n> Compile Sass to CSS using [node-sass](https://github.com/sass/node-sass)\n\n*Issues with the output should be reported on the libsass [issue tracker](https://github.com/hcatlin/libsass/issues).*\n\nThis task uses [libsass](http://libsass.org) which is a Sass compiler in C++. In contrast to the original Ruby compiler, this one is much faster, but is [missing some features](http://sass-compatibility.github.io/), though improving quickly. It also doesn\'t support Compass. Check out [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) if you prefer something more stable, but slower.\n\n\n## Install\n\n```\n$ npm install --save-dev grunt-sass\n```\n\n\n## Usage\n\n```js\nrequire(\'load-grunt-tasks\')(grunt); // npm install --save-dev load-grunt-tasks\n\ngrunt.initConfig({\n\tsass: {\n\t\toptions: {\n\t\t\tsourceMap: true\n\t\t},\n\t\tdist: {\n\t\t\tfiles: {\n\t\t\t\t\'main.css\': \'main.scss\'\n\t\t\t}\n\t\t}\n\t}\n});\n\ngrunt.registerTask(\'default\', [\'sass\']);\n```\n\nFiles starting with `_` are ignored to match the expected [Sass partial behaviour](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#partials).\n\n\n## Options\n\nSee the `node-sass` [options](https://github.com/sass/node-sass#options), except for `file`, `outFile`, `success`, `error`.\n\nThe default value for the `precision` option is `10`, so you don\'t have to change it when using Bootstrap.\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n',
+88 silly resolved     readmeFilename: 'readme.md',
+88 silly resolved     bugs: { url: 'https://github.com/sindresorhus/grunt-sass/issues' },
+88 silly resolved     homepage: 'https://github.com/sindresorhus/grunt-sass',
+88 silly resolved     _id: 'grunt-sass@1.0.0',
+88 silly resolved     dist: { shasum: '30625f10c1e3f2dc3a231051c34853d1020bc876' },
+88 silly resolved     _from: 'grunt-sass@',
+88 silly resolved     _resolved: 'https://registry.npmjs.org/grunt-sass/-/grunt-sass-1.0.0.tgz' } ]
+89 info install grunt-sass@1.0.0 into /Users/Chris/Dropbox/Documents/Code/personal-website
+90 info installOne grunt-sass@1.0.0
+91 info /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass unbuild
+92 info preuninstall grunt-sass@0.12.1
+93 info uninstall grunt-sass@0.12.1
+94 verbose true,/Users/Chris/Dropbox/Documents/Code/personal-website/node_modules,/Users/Chris/Dropbox/Documents/Code/personal-website/node_modules unbuild grunt-sass@0.12.1
+95 info postuninstall grunt-sass@0.12.1
+96 verbose tar unpack /Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+97 silly lockFile 50258baa--website-node-modules-grunt-sass tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass
+98 verbose lock tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass /Users/Chris/.npm/50258baa--website-node-modules-grunt-sass.lock
+99 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+100 verbose lock tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz /Users/Chris/.npm/e935eb62-npm-grunt-sass-1-0-0-package-tgz.lock
+101 silly gunzTarPerm modes [ '755', '644' ]
+102 silly gunzTarPerm extractEntry package.json
+103 silly gunzTarPerm extractEntry readme.md
+104 silly gunzTarPerm extractEntry tasks/sass.js
+105 silly lockFile 50258baa--website-node-modules-grunt-sass tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass
+106 silly lockFile 50258baa--website-node-modules-grunt-sass tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass
+107 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+108 silly lockFile e935eb62-npm-grunt-sass-1-0-0-package-tgz tar:///Users/Chris/.npm/grunt-sass/1.0.0/package.tgz
+109 info preinstall grunt-sass@1.0.0
+110 verbose readDependencies using package.json deps
+111 verbose readDependencies using package.json deps
+112 verbose cache add [ 'each-async@^1.0.0', null ]
+113 verbose cache add name=undefined spec="each-async@^1.0.0" args=["each-async@^1.0.0",null]
+114 verbose parsed url { protocol: null,
+114 verbose parsed url   slashes: null,
+114 verbose parsed url   auth: null,
+114 verbose parsed url   host: null,
+114 verbose parsed url   port: null,
+114 verbose parsed url   hostname: null,
+114 verbose parsed url   hash: null,
+114 verbose parsed url   search: null,
+114 verbose parsed url   query: null,
+114 verbose parsed url   pathname: 'each-async@%5E1.0.0',
+114 verbose parsed url   path: 'each-async@%5E1.0.0',
+114 verbose parsed url   href: 'each-async@%5E1.0.0' }
+115 verbose cache add name="each-async" spec="^1.0.0" args=["each-async","^1.0.0"]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: '%5E1.0.0',
+116 verbose parsed url   path: '%5E1.0.0',
+116 verbose parsed url   href: '%5E1.0.0' }
+117 verbose addNamed [ 'each-async', '^1.0.0' ]
+118 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+119 silly lockFile 61783ba7-each-async-1-0-0 each-async@^1.0.0
+120 verbose lock each-async@^1.0.0 /Users/Chris/.npm/61783ba7-each-async-1-0-0.lock
+121 verbose cache add [ 'object-assign@^2.0.0', null ]
+122 verbose cache add name=undefined spec="object-assign@^2.0.0" args=["object-assign@^2.0.0",null]
+123 verbose parsed url { protocol: null,
+123 verbose parsed url   slashes: null,
+123 verbose parsed url   auth: null,
+123 verbose parsed url   host: null,
+123 verbose parsed url   port: null,
+123 verbose parsed url   hostname: null,
+123 verbose parsed url   hash: null,
+123 verbose parsed url   search: null,
+123 verbose parsed url   query: null,
+123 verbose parsed url   pathname: 'object-assign@%5E2.0.0',
+123 verbose parsed url   path: 'object-assign@%5E2.0.0',
+123 verbose parsed url   href: 'object-assign@%5E2.0.0' }
+124 verbose cache add name="object-assign" spec="^2.0.0" args=["object-assign","^2.0.0"]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: '%5E2.0.0',
+125 verbose parsed url   path: '%5E2.0.0',
+125 verbose parsed url   href: '%5E2.0.0' }
+126 verbose addNamed [ 'object-assign', '^2.0.0' ]
+127 verbose addNamed [ null, '>=2.0.0-0 <3.0.0-0' ]
+128 silly lockFile 5a30528b-object-assign-2-0-0 object-assign@^2.0.0
+129 verbose lock object-assign@^2.0.0 /Users/Chris/.npm/5a30528b-object-assign-2-0-0.lock
+130 silly addNameRange { name: 'each-async',
+130 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+130 silly addNameRange   hasData: false }
+131 silly addNameRange { name: 'object-assign',
+131 silly addNameRange   range: '>=2.0.0-0 <3.0.0-0',
+131 silly addNameRange   hasData: false }
+132 verbose url raw object-assign
+133 verbose url resolving [ 'https://registry.npmjs.org/', './object-assign' ]
+134 verbose url resolved https://registry.npmjs.org/object-assign
+135 info trying registry request attempt 1 at 6:00:31 PM
+136 verbose etag "CSRRDZ386DZ1GLWDYH1UBX5O0"
+137 http GET https://registry.npmjs.org/object-assign
+138 verbose url raw each-async
+139 verbose url resolving [ 'https://registry.npmjs.org/', './each-async' ]
+140 verbose url resolved https://registry.npmjs.org/each-async
+141 info trying registry request attempt 1 at 6:00:31 PM
+142 verbose etag "6CXJ3JXRYKO1Z0QAJCF6AANJ2"
+143 http GET https://registry.npmjs.org/each-async
+144 http 200 https://registry.npmjs.org/each-async
+145 silly registry.get cb [ 200,
+145 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+145 silly registry.get     etag: '"2Z70M0TWBJ2Q2G4R9P9TFLXZD"',
+145 silly registry.get     'content-type': 'application/json',
+145 silly registry.get     'cache-control': 'max-age=60',
+145 silly registry.get     'content-length': '10547',
+145 silly registry.get     'accept-ranges': 'bytes',
+145 silly registry.get     date: 'Mon, 08 Jun 2015 17:00:24 GMT',
+145 silly registry.get     via: '1.1 varnish',
+145 silly registry.get     age: '17',
+145 silly registry.get     connection: 'close',
+145 silly registry.get     'x-served-by': 'cache-lcy1135-LCY',
+145 silly registry.get     'x-cache': 'HIT',
+145 silly registry.get     'x-cache-hits': '1',
+145 silly registry.get     'x-timer': 'S1433782824.752900,VS0,VE0',
+145 silly registry.get     vary: 'Accept' } ]
+146 silly addNameRange number 2 { name: 'each-async',
+146 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+146 silly addNameRange   hasData: true }
+147 silly addNameRange versions [ 'each-async',
+147 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '1.0.0', '1.1.0', '1.1.1' ] ]
+148 verbose addNamed [ 'each-async', '1.1.1' ]
+149 verbose addNamed [ '1.1.1', '1.1.1' ]
+150 silly lockFile e1300715-each-async-1-1-1 each-async@1.1.1
+151 verbose lock each-async@1.1.1 /Users/Chris/.npm/e1300715-each-async-1-1-1.lock
+152 http 304 https://registry.npmjs.org/object-assign
+153 silly registry.get cb [ 304,
+153 silly registry.get   { date: 'Mon, 08 Jun 2015 17:00:24 GMT',
+153 silly registry.get     via: '1.1 varnish',
+153 silly registry.get     'cache-control': 'max-age=60',
+153 silly registry.get     etag: '"CSRRDZ386DZ1GLWDYH1UBX5O0"',
+153 silly registry.get     age: '46',
+153 silly registry.get     connection: 'close',
+153 silly registry.get     'x-served-by': 'cache-lcy1126-LCY',
+153 silly registry.get     'x-cache': 'HIT',
+153 silly registry.get     'x-cache-hits': '2',
+153 silly registry.get     'x-timer': 'S1433782824.765516,VS0,VE0',
+153 silly registry.get     vary: 'Accept' } ]
+154 verbose etag object-assign from cache
+155 silly addNameRange number 2 { name: 'object-assign',
+155 silly addNameRange   range: '>=2.0.0-0 <3.0.0-0',
+155 silly addNameRange   hasData: true }
+156 silly addNameRange versions [ 'object-assign',
+156 silly addNameRange   [ '0.1.0',
+156 silly addNameRange     '0.1.1',
+156 silly addNameRange     '0.1.2',
+156 silly addNameRange     '0.2.0',
+156 silly addNameRange     '0.2.1',
+156 silly addNameRange     '0.2.2',
+156 silly addNameRange     '0.3.0',
+156 silly addNameRange     '0.3.1',
+156 silly addNameRange     '0.4.0',
+156 silly addNameRange     '1.0.0',
+156 silly addNameRange     '2.0.0',
+156 silly addNameRange     '3.0.0',
+156 silly addNameRange     '2.1.1' ] ]
+157 verbose addNamed [ 'object-assign', '2.1.1' ]
+158 verbose addNamed [ '2.1.1', '2.1.1' ]
+159 silly lockFile 52ac3888-object-assign-2-1-1 object-assign@2.1.1
+160 verbose lock object-assign@2.1.1 /Users/Chris/.npm/52ac3888-object-assign-2-1-1.lock
+161 silly lockFile e1300715-each-async-1-1-1 each-async@1.1.1
+162 silly lockFile e1300715-each-async-1-1-1 each-async@1.1.1
+163 silly lockFile 61783ba7-each-async-1-0-0 each-async@^1.0.0
+164 silly lockFile 61783ba7-each-async-1-0-0 each-async@^1.0.0
+165 silly lockFile 52ac3888-object-assign-2-1-1 object-assign@2.1.1
+166 silly lockFile 52ac3888-object-assign-2-1-1 object-assign@2.1.1
+167 silly lockFile 5a30528b-object-assign-2-0-0 object-assign@^2.0.0
+168 silly lockFile 5a30528b-object-assign-2-0-0 object-assign@^2.0.0
+169 silly resolved [ { name: 'each-async',
+169 silly resolved     version: '1.1.1',
+169 silly resolved     description: 'Async concurrent iterator (async forEach)',
+169 silly resolved     license: 'MIT',
+169 silly resolved     repository:
+169 silly resolved      { type: 'git',
+169 silly resolved        url: 'https://github.com/sindresorhus/each-async' },
+169 silly resolved     author:
+169 silly resolved      { name: 'Sindre Sorhus',
+169 silly resolved        email: 'sindresorhus@gmail.com',
+169 silly resolved        url: 'http://sindresorhus.com' },
+169 silly resolved     engines: { node: '>=0.10.0' },
+169 silly resolved     scripts: { test: 'mocha --timeout 20000' },
+169 silly resolved     files: [ 'index.js' ],
+169 silly resolved     keywords:
+169 silly resolved      [ 'each',
+169 silly resolved        'async',
+169 silly resolved        'asynchronous',
+169 silly resolved        'iteration',
+169 silly resolved        'iterate',
+169 silly resolved        'loop',
+169 silly resolved        'foreach',
+169 silly resolved        'parallel',
+169 silly resolved        'concurrent',
+169 silly resolved        'array',
+169 silly resolved        'flow',
+169 silly resolved        'control flow' ],
+169 silly resolved     dependencies: { onetime: '^1.0.0', 'set-immediate-shim': '^1.0.0' },
+169 silly resolved     devDependencies: { mocha: '*' },
+169 silly resolved     gitHead: '65f7f663e0e1a323c11bd0e036a08f585ab34a9c',
+169 silly resolved     bugs: { url: 'https://github.com/sindresorhus/each-async/issues' },
+169 silly resolved     homepage: 'https://github.com/sindresorhus/each-async',
+169 silly resolved     _id: 'each-async@1.1.1',
+169 silly resolved     _shasum: 'dee5229bdf0ab6ba2012a395e1b869abf8813473',
+169 silly resolved     _from: 'each-async@^1.0.0',
+169 silly resolved     _npmVersion: '2.1.16',
+169 silly resolved     _nodeVersion: '0.10.32',
+169 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+169 silly resolved     maintainers: [ [Object] ],
+169 silly resolved     dist:
+169 silly resolved      { shasum: 'dee5229bdf0ab6ba2012a395e1b869abf8813473',
+169 silly resolved        tarball: 'http://registry.npmjs.org/each-async/-/each-async-1.1.1.tgz' },
+169 silly resolved     directories: {},
+169 silly resolved     _resolved: 'https://registry.npmjs.org/each-async/-/each-async-1.1.1.tgz',
+169 silly resolved     readme: 'ERROR: No README data found!' },
+169 silly resolved   { name: 'object-assign',
+169 silly resolved     version: '2.1.1',
+169 silly resolved     description: 'ES6 Object.assign() ponyfill',
+169 silly resolved     license: 'MIT',
+169 silly resolved     repository:
+169 silly resolved      { type: 'git',
+169 silly resolved        url: 'git://github.com/sindresorhus/object-assign' },
+169 silly resolved     author:
+169 silly resolved      { name: 'Sindre Sorhus',
+169 silly resolved        email: 'sindresorhus@gmail.com',
+169 silly resolved        url: 'http://sindresorhus.com' },
+169 silly resolved     engines: { node: '>=0.10.0' },
+169 silly resolved     scripts: { test: 'mocha' },
+169 silly resolved     files: [ 'index.js' ],
+169 silly resolved     keywords:
+169 silly resolved      [ 'object',
+169 silly resolved        'assign',
+169 silly resolved        'extend',
+169 silly resolved        'properties',
+169 silly resolved        'es6',
+169 silly resolved        'ecmascript',
+169 silly resolved        'harmony',
+169 silly resolved        'ponyfill',
+169 silly resolved        'prollyfill',
+169 silly resolved        'polyfill',
+169 silly resolved        'shim',
+169 silly resolved        'browser' ],
+169 silly resolved     devDependencies: { mocha: '*' },
+169 silly resolved     readme: '# object-assign [![Build Status](https://travis-ci.org/sindresorhus/object-assign.svg?branch=master)](https://travis-ci.org/sindresorhus/object-assign)\n\n> ES6 [`Object.assign()`](http://www.2ality.com/2014/01/object-assign.html) ponyfill\n\n> Ponyfill: A polyfill that doesn\'t overwrite the native method\n\n\n## Install\n\n```sh\n$ npm install --save object-assign\n```\n\n\n## Usage\n\n```js\nvar objectAssign = require(\'object-assign\');\n\nobjectAssign({foo: 0}, {bar: 1});\n//=> {foo: 0, bar: 1}\n\n// multiple sources\nobjectAssign({foo: 0}, {bar: 1}, {baz: 2});\n//=> {foo: 0, bar: 1, baz: 2}\n\n// overwrites equal keys\nobjectAssign({foo: 0}, {foo: 1}, {foo: 2});\n//=> {foo: 2}\n\n// ignores null and undefined sources\nobjectAssign({foo: 0}, null, {bar: 1}, undefined);\n//=> {foo: 0, bar: 1}\n```\n\n\n## API\n\n### objectAssign(target, source, [source, ...])\n\nAssigns enumerable own properties of `source` objects to the `target` object and returns the `target` object. Additional `source` objects will overwrite previous ones.\n\n\n## Resources\n\n- [ES6 spec - Object.assign](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-object.assign)\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n',
+169 silly resolved     readmeFilename: 'readme.md',
+169 silly resolved     bugs: { url: 'https://github.com/sindresorhus/object-assign/issues' },
+169 silly resolved     homepage: 'https://github.com/sindresorhus/object-assign',
+169 silly resolved     _id: 'object-assign@2.1.1',
+169 silly resolved     _from: 'object-assign@^2.0.0' } ]
+170 info install each-async@1.1.1 into /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass
+171 info install object-assign@2.1.1 into /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass
+172 info installOne each-async@1.1.1
+173 info installOne object-assign@2.1.1
+174 info /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async unbuild
+175 info /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/object-assign unbuild
+176 verbose tar unpack /Users/Chris/.npm/each-async/1.1.1/package.tgz
+177 silly lockFile 8ffc281c-unt-sass-node-modules-each-async tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async
+178 verbose lock tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async /Users/Chris/.npm/8ffc281c-unt-sass-node-modules-each-async.lock
+179 silly lockFile 93792ffe-npm-each-async-1-1-1-package-tgz tar:///Users/Chris/.npm/each-async/1.1.1/package.tgz
+180 verbose lock tar:///Users/Chris/.npm/each-async/1.1.1/package.tgz /Users/Chris/.npm/93792ffe-npm-each-async-1-1-1-package-tgz.lock
+181 verbose tar unpack /Users/Chris/.npm/object-assign/2.1.1/package.tgz
+182 silly lockFile c93789b8--sass-node-modules-object-assign tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/object-assign
+183 verbose lock tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/object-assign /Users/Chris/.npm/c93789b8--sass-node-modules-object-assign.lock
+184 silly lockFile 05a92df6--object-assign-2-1-1-package-tgz tar:///Users/Chris/.npm/object-assign/2.1.1/package.tgz
+185 verbose lock tar:///Users/Chris/.npm/object-assign/2.1.1/package.tgz /Users/Chris/.npm/05a92df6--object-assign-2-1-1-package-tgz.lock
+186 silly gunzTarPerm modes [ '755', '644' ]
+187 silly gunzTarPerm modes [ '755', '644' ]
+188 silly gunzTarPerm extractEntry package.json
+189 silly gunzTarPerm extractEntry package.json
+190 silly gunzTarPerm extractEntry index.js
+191 silly gunzTarPerm extractEntry readme.md
+192 silly gunzTarPerm extractEntry index.js
+193 silly gunzTarPerm extractEntry license
+194 silly gunzTarPerm extractEntry readme.md
+195 silly lockFile c93789b8--sass-node-modules-object-assign tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/object-assign
+196 silly lockFile c93789b8--sass-node-modules-object-assign tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/object-assign
+197 silly lockFile 05a92df6--object-assign-2-1-1-package-tgz tar:///Users/Chris/.npm/object-assign/2.1.1/package.tgz
+198 silly lockFile 05a92df6--object-assign-2-1-1-package-tgz tar:///Users/Chris/.npm/object-assign/2.1.1/package.tgz
+199 info preinstall object-assign@2.1.1
+200 verbose readDependencies using package.json deps
+201 verbose readDependencies using package.json deps
+202 silly resolved []
+203 verbose about to build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/object-assign
+204 info build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/object-assign
+205 verbose linkStuff [ false,
+205 verbose linkStuff   false,
+205 verbose linkStuff   false,
+205 verbose linkStuff   '/Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules' ]
+206 info linkStuff object-assign@2.1.1
+207 verbose linkBins object-assign@2.1.1
+208 verbose linkMans object-assign@2.1.1
+209 verbose rebuildBundles object-assign@2.1.1
+210 info install object-assign@2.1.1
+211 info postinstall object-assign@2.1.1
+212 silly lockFile 8ffc281c-unt-sass-node-modules-each-async tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async
+213 silly lockFile 8ffc281c-unt-sass-node-modules-each-async tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async
+214 silly lockFile 93792ffe-npm-each-async-1-1-1-package-tgz tar:///Users/Chris/.npm/each-async/1.1.1/package.tgz
+215 silly lockFile 93792ffe-npm-each-async-1-1-1-package-tgz tar:///Users/Chris/.npm/each-async/1.1.1/package.tgz
+216 info preinstall each-async@1.1.1
+217 verbose readDependencies using package.json deps
+218 verbose readDependencies using package.json deps
+219 verbose cache add [ 'onetime@^1.0.0', null ]
+220 verbose cache add name=undefined spec="onetime@^1.0.0" args=["onetime@^1.0.0",null]
+221 verbose parsed url { protocol: null,
+221 verbose parsed url   slashes: null,
+221 verbose parsed url   auth: null,
+221 verbose parsed url   host: null,
+221 verbose parsed url   port: null,
+221 verbose parsed url   hostname: null,
+221 verbose parsed url   hash: null,
+221 verbose parsed url   search: null,
+221 verbose parsed url   query: null,
+221 verbose parsed url   pathname: 'onetime@%5E1.0.0',
+221 verbose parsed url   path: 'onetime@%5E1.0.0',
+221 verbose parsed url   href: 'onetime@%5E1.0.0' }
+222 verbose cache add name="onetime" spec="^1.0.0" args=["onetime","^1.0.0"]
+223 verbose parsed url { protocol: null,
+223 verbose parsed url   slashes: null,
+223 verbose parsed url   auth: null,
+223 verbose parsed url   host: null,
+223 verbose parsed url   port: null,
+223 verbose parsed url   hostname: null,
+223 verbose parsed url   hash: null,
+223 verbose parsed url   search: null,
+223 verbose parsed url   query: null,
+223 verbose parsed url   pathname: '%5E1.0.0',
+223 verbose parsed url   path: '%5E1.0.0',
+223 verbose parsed url   href: '%5E1.0.0' }
+224 verbose addNamed [ 'onetime', '^1.0.0' ]
+225 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+226 silly lockFile d730972f-onetime-1-0-0 onetime@^1.0.0
+227 verbose lock onetime@^1.0.0 /Users/Chris/.npm/d730972f-onetime-1-0-0.lock
+228 verbose cache add [ 'set-immediate-shim@^1.0.0', null ]
+229 verbose cache add name=undefined spec="set-immediate-shim@^1.0.0" args=["set-immediate-shim@^1.0.0",null]
+230 verbose parsed url { protocol: null,
+230 verbose parsed url   slashes: null,
+230 verbose parsed url   auth: null,
+230 verbose parsed url   host: null,
+230 verbose parsed url   port: null,
+230 verbose parsed url   hostname: null,
+230 verbose parsed url   hash: null,
+230 verbose parsed url   search: null,
+230 verbose parsed url   query: null,
+230 verbose parsed url   pathname: 'set-immediate-shim@%5E1.0.0',
+230 verbose parsed url   path: 'set-immediate-shim@%5E1.0.0',
+230 verbose parsed url   href: 'set-immediate-shim@%5E1.0.0' }
+231 verbose cache add name="set-immediate-shim" spec="^1.0.0" args=["set-immediate-shim","^1.0.0"]
+232 verbose parsed url { protocol: null,
+232 verbose parsed url   slashes: null,
+232 verbose parsed url   auth: null,
+232 verbose parsed url   host: null,
+232 verbose parsed url   port: null,
+232 verbose parsed url   hostname: null,
+232 verbose parsed url   hash: null,
+232 verbose parsed url   search: null,
+232 verbose parsed url   query: null,
+232 verbose parsed url   pathname: '%5E1.0.0',
+232 verbose parsed url   path: '%5E1.0.0',
+232 verbose parsed url   href: '%5E1.0.0' }
+233 verbose addNamed [ 'set-immediate-shim', '^1.0.0' ]
+234 verbose addNamed [ null, '>=1.0.0-0 <2.0.0-0' ]
+235 silly lockFile 5a1ef92a-set-immediate-shim-1-0-0 set-immediate-shim@^1.0.0
+236 verbose lock set-immediate-shim@^1.0.0 /Users/Chris/.npm/5a1ef92a-set-immediate-shim-1-0-0.lock
+237 silly addNameRange { name: 'onetime', range: '>=1.0.0-0 <2.0.0-0', hasData: false }
+238 silly addNameRange { name: 'set-immediate-shim',
+238 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+238 silly addNameRange   hasData: false }
+239 verbose url raw onetime
+240 verbose url resolving [ 'https://registry.npmjs.org/', './onetime' ]
+241 verbose url resolved https://registry.npmjs.org/onetime
+242 info trying registry request attempt 1 at 6:00:31 PM
+243 verbose etag "EKGIK8G4OQMZ86JARVGKI2SW6"
+244 http GET https://registry.npmjs.org/onetime
+245 verbose url raw set-immediate-shim
+246 verbose url resolving [ 'https://registry.npmjs.org/', './set-immediate-shim' ]
+247 verbose url resolved https://registry.npmjs.org/set-immediate-shim
+248 info trying registry request attempt 1 at 6:00:31 PM
+249 verbose etag "8ETDBR4RO9I0RM6UIXJYJGXKS"
+250 http GET https://registry.npmjs.org/set-immediate-shim
+251 http 304 https://registry.npmjs.org/set-immediate-shim
+252 silly registry.get cb [ 304,
+252 silly registry.get   { date: 'Mon, 08 Jun 2015 17:00:24 GMT',
+252 silly registry.get     via: '1.1 varnish',
+252 silly registry.get     'cache-control': 'max-age=60',
+252 silly registry.get     etag: '"8ETDBR4RO9I0RM6UIXJYJGXKS"',
+252 silly registry.get     age: '0',
+252 silly registry.get     connection: 'close',
+252 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+252 silly registry.get     'x-cache': 'HIT',
+252 silly registry.get     'x-cache-hits': '1',
+252 silly registry.get     'x-timer': 'S1433782824.842255,VS0,VE352',
+252 silly registry.get     vary: 'Accept' } ]
+253 verbose etag set-immediate-shim from cache
+254 silly addNameRange number 2 { name: 'set-immediate-shim',
+254 silly addNameRange   range: '>=1.0.0-0 <2.0.0-0',
+254 silly addNameRange   hasData: true }
+255 silly addNameRange versions [ 'set-immediate-shim', [ '1.0.0', '1.0.1' ] ]
+256 verbose addNamed [ 'set-immediate-shim', '1.0.1' ]
+257 verbose addNamed [ '1.0.1', '1.0.1' ]
+258 silly lockFile 72e91e52-set-immediate-shim-1-0-1 set-immediate-shim@1.0.1
+259 verbose lock set-immediate-shim@1.0.1 /Users/Chris/.npm/72e91e52-set-immediate-shim-1-0-1.lock
+260 silly lockFile 72e91e52-set-immediate-shim-1-0-1 set-immediate-shim@1.0.1
+261 silly lockFile 72e91e52-set-immediate-shim-1-0-1 set-immediate-shim@1.0.1
+262 silly lockFile 5a1ef92a-set-immediate-shim-1-0-0 set-immediate-shim@^1.0.0
+263 silly lockFile 5a1ef92a-set-immediate-shim-1-0-0 set-immediate-shim@^1.0.0
+264 http 304 https://registry.npmjs.org/onetime
+265 silly registry.get cb [ 304,
+265 silly registry.get   { date: 'Mon, 08 Jun 2015 17:00:24 GMT',
+265 silly registry.get     via: '1.1 varnish',
+265 silly registry.get     'cache-control': 'max-age=60',
+265 silly registry.get     etag: '"EKGIK8G4OQMZ86JARVGKI2SW6"',
+265 silly registry.get     age: '0',
+265 silly registry.get     connection: 'close',
+265 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+265 silly registry.get     'x-cache': 'HIT',
+265 silly registry.get     'x-cache-hits': '1',
+265 silly registry.get     'x-timer': 'S1433782824.839383,VS0,VE620',
+265 silly registry.get     vary: 'Accept' } ]
+266 verbose etag onetime from cache
+267 silly addNameRange number 2 { name: 'onetime', range: '>=1.0.0-0 <2.0.0-0', hasData: true }
+268 silly addNameRange versions [ 'onetime', [ '0.1.0', '0.1.1', '1.0.0' ] ]
+269 verbose addNamed [ 'onetime', '1.0.0' ]
+270 verbose addNamed [ '1.0.0', '1.0.0' ]
+271 silly lockFile 7aedc42a-onetime-1-0-0 onetime@1.0.0
+272 verbose lock onetime@1.0.0 /Users/Chris/.npm/7aedc42a-onetime-1-0-0.lock
+273 silly lockFile 7aedc42a-onetime-1-0-0 onetime@1.0.0
+274 silly lockFile 7aedc42a-onetime-1-0-0 onetime@1.0.0
+275 silly lockFile d730972f-onetime-1-0-0 onetime@^1.0.0
+276 silly lockFile d730972f-onetime-1-0-0 onetime@^1.0.0
+277 silly resolved [ { name: 'set-immediate-shim',
+277 silly resolved     version: '1.0.1',
+277 silly resolved     description: 'Simple setImmediate shim',
+277 silly resolved     license: 'MIT',
+277 silly resolved     repository:
+277 silly resolved      { type: 'git',
+277 silly resolved        url: 'https://github.com/sindresorhus/set-immediate-shim' },
+277 silly resolved     author:
+277 silly resolved      { name: 'Sindre Sorhus',
+277 silly resolved        email: 'sindresorhus@gmail.com',
+277 silly resolved        url: 'sindresorhus.com' },
+277 silly resolved     engines: { node: '>=0.10.0' },
+277 silly resolved     scripts: { test: 'node test.js' },
+277 silly resolved     files: [ 'index.js' ],
+277 silly resolved     keywords:
+277 silly resolved      [ 'setImmediate',
+277 silly resolved        'immediate',
+277 silly resolved        'setTimeout',
+277 silly resolved        'timeout',
+277 silly resolved        'shim',
+277 silly resolved        'polyfill',
+277 silly resolved        'ponyfill' ],
+277 silly resolved     devDependencies: { ava: '0.0.4', 'require-uncached': '^1.0.2' },
+277 silly resolved     gitHead: '4c50df7ade5a368e106fee82351ee0a378c990f7',
+277 silly resolved     bugs: { url: 'https://github.com/sindresorhus/set-immediate-shim/issues' },
+277 silly resolved     homepage: 'https://github.com/sindresorhus/set-immediate-shim',
+277 silly resolved     _id: 'set-immediate-shim@1.0.1',
+277 silly resolved     _shasum: '4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61',
+277 silly resolved     _from: 'set-immediate-shim@^1.0.0',
+277 silly resolved     _npmVersion: '1.4.28',
+277 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+277 silly resolved     maintainers: [ [Object] ],
+277 silly resolved     dist:
+277 silly resolved      { shasum: '4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61',
+277 silly resolved        tarball: 'http://registry.npmjs.org/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz' },
+277 silly resolved     directories: {},
+277 silly resolved     _resolved: 'https://registry.npmjs.org/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz',
+277 silly resolved     readme: 'ERROR: No README data found!' },
+277 silly resolved   { name: 'onetime',
+277 silly resolved     version: '1.0.0',
+277 silly resolved     description: 'Only call a function once. Unlike the module `once`, this one isn\'t naughty extending `Function.prototype`.',
+277 silly resolved     keywords: [ 'once', 'one', 'single', 'call', 'function', 'prevent' ],
+277 silly resolved     license: 'MIT',
+277 silly resolved     author:
+277 silly resolved      { name: 'Sindre Sorhus',
+277 silly resolved        email: 'sindresorhus@gmail.com',
+277 silly resolved        url: 'http://sindresorhus.com' },
+277 silly resolved     files: [ 'index.js' ],
+277 silly resolved     repository: { type: 'git', url: 'git://github.com/sindresorhus/onetime' },
+277 silly resolved     scripts: { test: 'mocha' },
+277 silly resolved     devDependencies: { mocha: '*' },
+277 silly resolved     engines: { node: '>=0.10.0' },
+277 silly resolved     gitHead: 'a4aa1ce5291cc5f32ecb8f4b0a918b12cb47ea5e',
+277 silly resolved     bugs: { url: 'https://github.com/sindresorhus/onetime/issues' },
+277 silly resolved     homepage: 'https://github.com/sindresorhus/onetime',
+277 silly resolved     _id: 'onetime@1.0.0',
+277 silly resolved     _shasum: '3a08a8e39d7816df52d34886374fb8ed8b651f62',
+277 silly resolved     _from: 'onetime@^1.0.0',
+277 silly resolved     _npmVersion: '1.4.14',
+277 silly resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+277 silly resolved     maintainers: [ [Object] ],
+277 silly resolved     dist:
+277 silly resolved      { shasum: '3a08a8e39d7816df52d34886374fb8ed8b651f62',
+277 silly resolved        tarball: 'http://registry.npmjs.org/onetime/-/onetime-1.0.0.tgz' },
+277 silly resolved     directories: {},
+277 silly resolved     _resolved: 'https://registry.npmjs.org/onetime/-/onetime-1.0.0.tgz',
+277 silly resolved     readme: 'ERROR: No README data found!' } ]
+278 info install set-immediate-shim@1.0.1 into /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async
+279 info install onetime@1.0.0 into /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async
+280 info installOne set-immediate-shim@1.0.1
+281 info installOne onetime@1.0.0
+282 info /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/set-immediate-shim unbuild
+283 info /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/onetime unbuild
+284 verbose tar unpack /Users/Chris/.npm/set-immediate-shim/1.0.1/package.tgz
+285 silly lockFile a07edf1d--node-modules-set-immediate-shim tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/set-immediate-shim
+286 verbose lock tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/set-immediate-shim /Users/Chris/.npm/a07edf1d--node-modules-set-immediate-shim.lock
+287 silly lockFile 5dcc1525-immediate-shim-1-0-1-package-tgz tar:///Users/Chris/.npm/set-immediate-shim/1.0.1/package.tgz
+288 verbose lock tar:///Users/Chris/.npm/set-immediate-shim/1.0.1/package.tgz /Users/Chris/.npm/5dcc1525-immediate-shim-1-0-1-package-tgz.lock
+289 verbose tar unpack /Users/Chris/.npm/onetime/1.0.0/package.tgz
+290 silly lockFile 687024ce--each-async-node-modules-onetime tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/onetime
+291 verbose lock tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/onetime /Users/Chris/.npm/687024ce--each-async-node-modules-onetime.lock
+292 silly lockFile bf1cdb95-is-npm-onetime-1-0-0-package-tgz tar:///Users/Chris/.npm/onetime/1.0.0/package.tgz
+293 verbose lock tar:///Users/Chris/.npm/onetime/1.0.0/package.tgz /Users/Chris/.npm/bf1cdb95-is-npm-onetime-1-0-0-package-tgz.lock
+294 silly gunzTarPerm modes [ '755', '644' ]
+295 silly gunzTarPerm modes [ '755', '644' ]
+296 silly gunzTarPerm extractEntry package.json
+297 silly gunzTarPerm extractEntry package.json
+298 silly gunzTarPerm extractEntry index.js
+299 silly gunzTarPerm extractEntry readme.md
+300 silly gunzTarPerm extractEntry index.js
+301 silly gunzTarPerm extractEntry readme.md
+302 silly lockFile a07edf1d--node-modules-set-immediate-shim tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/set-immediate-shim
+303 silly lockFile a07edf1d--node-modules-set-immediate-shim tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/set-immediate-shim
+304 silly lockFile 5dcc1525-immediate-shim-1-0-1-package-tgz tar:///Users/Chris/.npm/set-immediate-shim/1.0.1/package.tgz
+305 silly lockFile 5dcc1525-immediate-shim-1-0-1-package-tgz tar:///Users/Chris/.npm/set-immediate-shim/1.0.1/package.tgz
+306 silly lockFile 687024ce--each-async-node-modules-onetime tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/onetime
+307 silly lockFile 687024ce--each-async-node-modules-onetime tar:///Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/onetime
+308 info preinstall set-immediate-shim@1.0.1
+309 silly lockFile bf1cdb95-is-npm-onetime-1-0-0-package-tgz tar:///Users/Chris/.npm/onetime/1.0.0/package.tgz
+310 silly lockFile bf1cdb95-is-npm-onetime-1-0-0-package-tgz tar:///Users/Chris/.npm/onetime/1.0.0/package.tgz
+311 verbose readDependencies using package.json deps
+312 verbose readDependencies using package.json deps
+313 silly resolved []
+314 verbose about to build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/set-immediate-shim
+315 info build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/set-immediate-shim
+316 verbose linkStuff [ false,
+316 verbose linkStuff   false,
+316 verbose linkStuff   false,
+316 verbose linkStuff   '/Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules' ]
+317 info linkStuff set-immediate-shim@1.0.1
+318 verbose linkBins set-immediate-shim@1.0.1
+319 verbose linkMans set-immediate-shim@1.0.1
+320 verbose rebuildBundles set-immediate-shim@1.0.1
+321 info install set-immediate-shim@1.0.1
+322 info preinstall onetime@1.0.0
+323 info postinstall set-immediate-shim@1.0.1
+324 verbose readDependencies using package.json deps
+325 verbose readDependencies using package.json deps
+326 silly resolved []
+327 verbose about to build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/onetime
+328 info build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules/onetime
+329 verbose linkStuff [ false,
+329 verbose linkStuff   false,
+329 verbose linkStuff   false,
+329 verbose linkStuff   '/Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async/node_modules' ]
+330 info linkStuff onetime@1.0.0
+331 verbose linkBins onetime@1.0.0
+332 verbose linkMans onetime@1.0.0
+333 verbose rebuildBundles onetime@1.0.0
+334 info install onetime@1.0.0
+335 info postinstall onetime@1.0.0
+336 verbose about to build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async
+337 info build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules/each-async
+338 verbose linkStuff [ false,
+338 verbose linkStuff   false,
+338 verbose linkStuff   false,
+338 verbose linkStuff   '/Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass/node_modules' ]
+339 info linkStuff each-async@1.1.1
+340 verbose linkBins each-async@1.1.1
+341 verbose linkMans each-async@1.1.1
+342 verbose rebuildBundles each-async@1.1.1
+343 verbose rebuildBundles [ 'onetime', 'set-immediate-shim' ]
+344 info install each-async@1.1.1
+345 info postinstall each-async@1.1.1
+346 verbose about to build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass
+347 info build /Users/Chris/Dropbox/Documents/Code/personal-website/node_modules/grunt-sass
+348 verbose linkStuff [ false,
+348 verbose linkStuff   false,
+348 verbose linkStuff   false,
+348 verbose linkStuff   '/Users/Chris/Dropbox/Documents/Code/personal-website/node_modules' ]
+349 info linkStuff grunt-sass@1.0.0
+350 verbose linkBins grunt-sass@1.0.0
+351 verbose linkMans grunt-sass@1.0.0
+352 verbose rebuildBundles grunt-sass@1.0.0
+353 verbose rebuildBundles [ 'each-async', 'object-assign' ]
+354 info install grunt-sass@1.0.0
+355 info postinstall grunt-sass@1.0.0
+356 error peerinvalid The package grunt does not satisfy its siblings' peerDependencies requirements!
+356 error peerinvalid Peer grunt-contrib-concat@0.3.0 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-contrib-copy@0.5.0 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-refupdate@0.1.3 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-sas@1.2.0 wants grunt@~0.4.5
+356 error peerinvalid Peer grunt-contrib-clean@0.6.0 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-concurrent@0.5.0 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-contrib-uglify@0.3.2 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-contrib-connect@0.6.0 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-contrib-watch@0.5.3 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-contrib-compress@0.6.1 wants grunt@~0.4.0
+356 error peerinvalid Peer grunt-contrib-cssmin@0.9.0 wants grunt@~0.4.1
+357 error System Darwin 14.3.0
+358 error command "node" "/Users/Chris/npm-global/bin/npm" "install" "grunt-sass"
+359 error cwd /Users/Chris/Dropbox/Documents/Code/personal-website
+360 error node -v v0.12.2
+361 error npm -v 1.4.3
+362 error code EPEERINVALID
+363 verbose exit [ 1, true ]
