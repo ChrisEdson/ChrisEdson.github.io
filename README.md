@@ -1,6 +1,6 @@
 # Personal Site
 
-This is my personal website, [chrisedson.co.uk](http://chrisedson.co.uk).
+This is my personal website, [chrisedson.com](http://chrisedson.com).
 
 To do:
 - [x] Add hrefs to projects
