@@ -1,3 +1,5 @@
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
 
     // 1. All configuration goes here
@@ -51,6 +53,9 @@ module.exports = function(grunt) {
         },
 
         sass: {
+            options: {
+                implementation: sass,
+            },
             main: {
                 files: {
                     'css/build/site.min.css': 'css/src/main.scss'
